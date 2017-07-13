@@ -1,0 +1,77 @@
+{ "type": "FeatureCollection", "features": [{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-11.7799, 8.46056]
+		},
+		"properties": {
+			"id": "2",
+			"name": "Sierra Leone",
+			"icon": "sl",
+			"picture_filename": "thumb_2121_default_see_800x600.jpeg",
+			"projectCount": "0",
+			"villageCount": "1",
+			"fundingCount": "0",
+			"swLat": "8.3464000701904",
+			"swLng": "-11.290000152588",
+		 	"neLat": "8.7464000701904",
+			"neLng": "-10.890000152588"
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-1.02319, 7.94653]
+		},
+		"properties": {
+			"id": "34",
+			"name": "Ghana",
+			"icon": "gh",
+			"picture_filename": "thumb_990_default_buy_list.png",
+			"projectCount": "1",
+			"villageCount": "1",
+			"fundingCount": "0",
+			"swLat": "10.511000442505",
+			"swLng": "-1.0759999871254",
+		 	"neLat": "10.911000442505",
+			"neLng": "-0.6759999871254"
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-9.69664, 9.94559]
+		},
+		"properties": {
+			"id": "69",
+			"name": "Guinea",
+			"icon": "gn",
+			"picture_filename": "thumb_2120_default_see_800x600.jpeg",
+			"projectCount": "0",
+			"villageCount": "1",
+			"fundingCount": "0",
+			"swLat": "10.488836097717",
+			"swLng": "-12.450426292419",
+		 	"neLat": "10.888836097717",
+			"neLng": "-12.050426292419"
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [34.208, -13.209]
+		},
+		"properties": {
+			"id": "83",
+			"name": "Malawi",
+			"icon": "mw",
+			"picture_filename": "thumb_767_default_buy_list.jpeg",
+			"projectCount": "25",
+			"villageCount": "14",
+			"fundingCount": "3",
+			"swLat": "-15.829999923706055",
+			"swLng": "35.14799880981445",
+		 	"neLat": "-15.473999977111816",
+			"neLng": "35.52799987792969"
+		}
+	}]}

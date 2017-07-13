@@ -1,0 +1,4 @@
+<?php
+require_once("utilities.php");
+print doJsonQuery("SELECT country_id, country_label, country_code, country_latitude, country_longitude, country_bounds_sw_lat, country_bounds_sw_lng, country_bounds_ne_lat, country_bounds_ne_lng, picture_filename, COUNT(DISTINCT village_id) AS villageCount, COUNT(DISTINCT project_id) AS projectCount, SUM(IF(project_status='funding', 1, 0)) AS fundingCount FROM countries JOIN villages ON country_id=village_country JOIN projects ON village_id=project_village_id JOIN pictures ON project_image_id=picture_id WHERE country_bounds_sw_lat <> 0 GROUP BY country_id");
+?>

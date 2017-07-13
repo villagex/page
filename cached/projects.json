@@ -1,0 +1,469 @@
+{ "type": "FeatureCollection", "features": [{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.5277, -15.6442]
+		},
+		"properties": {
+			"id": "70",
+			"name": "Build a Teacher House",
+			"villageName": "Mwanga",
+            "icon": "house",
+			"picture_filename": "thumb_767_default_buy_list.jpeg",
+			"project_budget": "2000",
+			"project_funded": "2000",
+		 	"updatePictures": "297:Dec 12th, 2014 This little guy showed up at Village X's meeting with Maluwa and Mwanga Villages in Malawi. Not sure which village he calls home, but he definitely wins the \"best dressed\" award.~302:Dec 12th, 2014 Welcome to main street in Mwanga Village, Malawi. The presence of two bicycle mechanics in this picture demonstrates the importance of bicycles to the economy in rural Malawi.~301:Dec 12th, 2014 Here's another view from the center of Mwanga Village, Malawi, where various merchants are selling food, drinks, haircuts and daily necessities like cooking oil and soap. The bag on the back of the bicycle is full of corn, the staple crop grown all over Malawi.~676:Feb 3rd, 2015 Here the project budget written by the community.~677:Feb 3rd, 2015 The project committee meets to write a proposal and budget.~1862:Jul 14th, 2016  ~1863:Jul 14th, 2016  ~1869:Jul 22nd, 2016  ~1870:Jul 22nd, 2016  ~1877:Aug 1st, 2016  ~1878:Aug 1st, 2016  ~1879:Aug 1st, 2016  ~1894:Aug 21st, 2016  ~1895:Aug 21st, 2016  ~1896:Aug 21st, 2016  ~1897:Aug 21st, 2016  ~1901:Sep 3rd, 2016  ~1902:Sep 3rd, 2016  ~1903:Sep 3rd, 2016  ~1958:Sep 26th, 2016  ~1959:Sep 26th, 2016  ~1960:Sep 26th, 2016  ~1961:Sep 26th, 2016  ~1962:Sep 26th, 2016  ~1969:Oct 23rd, 2016  ~1970:Oct 23rd, 2016  ~1971:Oct 23rd, 2016  ~1972:Oct 23rd, 2016  ~1973:Oct 23rd, 2016  ~1974:Oct 23rd, 2016  ~1975:Oct 23rd, 2016  ~1976:Oct 23rd, 2016  ~1977:Oct 23rd, 2016  ~1978:Oct 23rd, 2016  ",
+			"project_summary": "Mwanga wants to build a teacher's house at the community's primary school to solve a persistent problem. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-0.87257, 10.7082]
+		},
+		"properties": {
+			"id": "71",
+			"name": "Build a Community Library",
+			"villageName": "Awaradonne",
+            "icon": "library",
+			"picture_filename": "thumb_990_default_buy_list.png",
+			"project_budget": "1800",
+			"project_funded": "1800",
+		 	"updatePictures": "353:Dec 14th, 2014 A family compound sits in the background in Awaradonne, Ghana. A palm tree (left) and baobab tree (right) frame the compound. This being the dry season, the equatorial African air is hot and arid, and the fields are bone dry.~354:Dec 14th, 2014 In March 2014, the community in Awaradonne Village, Ghana, attends a Friends of Village X meeting. The meeting had an amazing turnout, due in large part to the inspiring leadership of Awaradonne's chief.~355:Dec 14th, 2014 In Awaradonne Village, Ghana, the chief and community members pose during a Friends of Village X meeting. Behind the chief stands Sapak Evans, Friends of Village X country rep in Ghana.~647:Feb 2nd, 2015 Here's the community's budget for the road rehabilitation.~648:Feb 3rd, 2015 Villagers discuss the project at a community meeting.~884:Apr 12th, 2015 Here's an overhead shot of Awaradonne Village, Upper East, Ghana. The clearing on the left is the village center, and the dirt road to the right will soon turn into a soupy mess, with the arrival of the rainy season. Help us change that, together with Awaradonne residents and other generous Village Xers.~991:Jun 16th, 2015 Your money at work! Young men from Awaradonne dig a trench around the perimeter of the library.~992:Jun 16th, 2015 The trench is almost done. It demarcates the building's footprint and will act as a mold for the cement foundation.~993:Jun 16th, 2015 Team Awaradonne is pouring the cement foundation! They are mixing cement in the background, beneath the trees, and carrying it to the library site in large metal basins.~996:Jun 16th, 2015 Just for the record, here's proof of the Ghanaian's government's decision to rehabilitate Awaradonne's road. This is why Village X has repurposed funds for the community library.~997:Jun 16th, 2015 Here is Awaradonne's budget for the community library. We believe in complete transparency. It's one of our core values.~1038:Jun 23rd, 2015 Workers in Awaradonne stack bricks around the library's foundation.~1039:Jun 23rd, 2015 Workers in Awaradonne lay bricks around the library's foundation. Up go the walls!~1060:Jun 28th, 2015 This photo is proof of two things: (1) Awaradonne continues to work hard on its community library; and (2) plumber's crack is an international menace.~1080:Jul 3rd, 2015 Awaradonne is doing a good job building the walls of its community library. Not bad for only two weeks of work.~1079:Jul 3rd, 2015 Evans, our Ghana Country Rep, reports that project progress is slowing a bit due to the spectacle of a special election for the area's Member of Parliament. Lots of politicking.~1135:Jul 14th, 2015 The walls of the community library have reached the roofline. Thanks for making this happen!~1226:Aug 20th, 2015 Workers have installed window frames (with steel bars to deter burglary) and door frames.~1227:Aug 20th, 2015 Workers install a cement header around the building to provide support for another layer of bricks.~1228:Aug 20th, 2015 Workers build the walls higher, above the window and door frames. Everyone is lending a hand.~1229:Aug 20th, 2015 Workers build the roofline using bricks and cement. The next step is installing the roof!~1549:Jan 4th, 2016  ~1550:Jan 4th, 2016  ~1551:Jan 4th, 2016  ~1552:Jan 4th, 2016  ~1553:Jan 4th, 2016  ~1554:Jan 4th, 2016  ~1635:Mar 1st, 2016 Awaradonne Village, Ghana just opened its \"community library\" and put it to use (at least some of the time) as a primary school classroom. Love the adaptability.~1636:Mar 1st, 2016  ~1637:Mar 1st, 2016  ~1638:Mar 1st, 2016  ",
+			"project_summary": "Awaradonne will build a community library to help residents advance their educations without leaving the village. This is especially important for adults who don't have as many educational opportunities, as well as students in the Ghanaian education system that need another learning resource. The community has contributed labor, materials and cash. Because it's led by the community, this project will be less expensive, more efficient, and more transparent than projects delivered by international NGOs. NOTE: this used to be the road rehabilitation project, but the Ghanaian government agreed to fix the road."
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3476, -15.4758]
+		},
+		"properties": {
+			"id": "74",
+			"name": "Start a Goat Herd",
+			"villageName": "Chikumbu",
+            "icon": "livestock",
+			"picture_filename": "thumb_1815_default_buy_list.png",
+			"project_budget": "2000",
+			"project_funded": "2033.49",
+		 	"updatePictures": "311:Dec 13th, 2014 A goat feeds on the grass of the soccer field in Chikumbu Village, Malawi. The community will start a goat rearing program using its own funds in combination with donations from you. The goats will live in pens made by the community using locally available materials.~310:Dec 13th, 2014 Chikumbu Village is located in Zomba District, Malawi. The village is separated from the town of Zomba (the colonial capital of Malawi) by Ulumba Mountain, towering in the background.~312:Dec 13th, 2014 Chikumbu and Nakhwalala Villages attend a Friends of Village X meeting in April. Myson Jambo, Malawi country representative for Friends of Village X, addresses the crowd of people seated under a mango tree.~649:Feb 3rd, 2015 Here's the project budget, prepared by the community and checked by us.~458:Feb 3rd, 2015 The village's project committee has a message for you!~1447:Nov 21st, 2015  ~1448:Nov 21st, 2015  ~1449:Nov 21st, 2015  ~1450:Nov 21st, 2015  ~1451:Nov 21st, 2015  ~1452:Nov 21st, 2015  ~1453:Nov 21st, 2015  ~1454:Nov 21st, 2015  ~1455:Nov 21st, 2015  ~1456:Nov 21st, 2015  ~1457:Nov 21st, 2015  ~1458:Nov 21st, 2015  ~1459:Nov 21st, 2015  ~1460:Nov 21st, 2015  ~1461:Nov 21st, 2015  ~1462:Nov 21st, 2015  ~1463:Nov 21st, 2015  ~1464:Nov 21st, 2015  ~1465:Nov 21st, 2015  ~1466:Nov 21st, 2015  ~1467:Nov 21st, 2015  ~1784:Jun 13th, 2016  ~1785:Jun 13th, 2016  ~1786:Jun 13th, 2016  ",
+			"project_summary": "Chikumbu wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3307, -15.7426]
+		},
+		"properties": {
+			"id": "75",
+			"name": "Build a Nursery School",
+			"villageName": "Kazembe",
+            "icon": "nursery",
+			"picture_filename": "thumb_755_default_buy_list.jpeg",
+			"project_budget": "1900",
+			"project_funded": "1984",
+		 	"updatePictures": "325:Dec 14th, 2014 A man rides his bicycle down the rutted dirt road that passes Kazembe Village, Malawi. Chiradzulu Mountain sits in the background.~326:Dec 14th, 2014 A group of curious boys check out the Friends of Village X meeting in Kazembe Village, Malawi. The corn stalks dry in the fields around the boys, following a successful rainy season and harvest.~327:Dec 14th, 2014 A typical Malawian homestead sits in Kazembe Village, Malawi. The homes are made from wood-fired mud bricks and fresh mud is used like mortar to build the walls. Thatched roofs are made from local grasses.~654:Feb 3rd, 2015 Here's the community's budget for the project.~655:Feb 3rd, 2015 The project committee gathers to write the project proposal and budget.~1294:Sep 24th, 2015 The project is underway! The project committee went to Blantyre (closest city) to buy supplies.~1295:Sep 24th, 2015 After the truck arrived in Kazembe, the community rallied to unload and store the building supplies. Construction will begin immediately.~1296:Sep 24th, 2015 These kids are pretty excited about the nursery school. Their smiles are a great reminder that these community-led projects help real people in real places.~1312:Sep 26th, 2015 Workers build a brick and cement foundation around the perimeter of the nursery school.~1313:Sep 26th, 2015 A worker uses a traditional garden hoe to dig along the perimeter of the nursery school, as the foundation takes shape.~1311:Sep 26th, 2015 A low brick wall rises along the perimeter of the school. Kazembe is making great progress!~1321:Oct 1st, 2015 The nursery school is taking shape. The wall rises brick by brick.~1320:Oct 1st, 2015 Workers take a moment to pose for the camera.~1348:Oct 9th, 2015 Workers continue to build the nursery school. The walls are getting tall!~1349:Oct 9th, 2015 Bricklayers use string to guide their work. Love the cloud shadows on the sand.~1347:Oct 9th, 2015 Workers will install these cement blocks in place of windows. The blocks will allow some light and fresh air to enter the school.~1364:Oct 15th, 2015 Workers install white blocks with holes in place of windows. Less expensive and serves the same purpose.~1365:Oct 15th, 2015 Here's the work from another angle. Love the white color of the blocks against the deep red brick.~1374:Oct 21st, 2015  ~1376:Oct 21st, 2015  ~1377:Oct 21st, 2015  ~1413:Oct 30th, 2015  ~1414:Oct 30th, 2015  ~1415:Oct 30th, 2015  ~1442:Nov 21st, 2015  ~1443:Nov 21st, 2015  ~1444:Nov 21st, 2015  ~1445:Nov 21st, 2015  ~1490:Dec 17th, 2015  ~1491:Dec 17th, 2015  ~1492:Dec 17th, 2015  ~1493:Dec 17th, 2015  ~1494:Dec 17th, 2015  ~1539:Jan 4th, 2016  ~1540:Jan 4th, 2016  ~1541:Jan 4th, 2016  ~1542:Jan 4th, 2016  ~1543:Jan 4th, 2016  ~1545:Jan 4th, 2016  ~1546:Jan 4th, 2016  ~1547:Jan 4th, 2016  ~1548:Jan 4th, 2016  ~1787:Jun 13th, 2016  ~1788:Jun 13th, 2016  ~1789:Jun 13th, 2016  ~1790:Jun 13th, 2016  ",
+			"project_summary": "Kazembe wants to build a nursery school to solve a persistent problem involving early childhood education. \n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.1513, -15.8323]
+		},
+		"properties": {
+			"id": "76",
+			"name": "Build a Nursery School",
+			"villageName": "Likoswe",
+            "icon": "nursery",
+			"picture_filename": "thumb_756_default_buy_list.jpeg",
+			"project_budget": "1900",
+			"project_funded": "1936",
+		 	"updatePictures": "314:Dec 13th, 2014 Likoswe Village gathers under a large tree to hear about Friends of Village X, a new nonprofit that supports community-led, small-scale, completely transparent development projects. Needless to say, they are excited to choose, plan, implement and document their own projects with oversight from Friends of Village X.~316:Dec 13th, 2014 Here's the center of Likoswe Village, Malawi, which is a short walk from a paved road that connects Blantyre to Mulanje. The store in the background is a popular gathering spot for residents.~315:Dec 13th, 2014 Friends of Village X gets some help from Alfred Piyo, a primary school teacher in Malawi, during a visit to Likoswe Village. Here, Alfred describes what sets Friends of Village X apart from other NGOs -- local control of projects, smartphone updates of progress, and 85% of donations getting to the ground for direct project costs.~656:Feb 3rd, 2015 Here's the project budget written by the community.~657:Feb 3rd, 2015 The community sends a message to you!~1689:Apr 6th, 2016 Down by the stream bank, fetching sand for the nursery school.~1690:Apr 6th, 2016  ~1695:Apr 12th, 2016  ~1696:Apr 12th, 2016  ~1697:Apr 12th, 2016  ~1698:Apr 12th, 2016  ~1699:Apr 12th, 2016  ~1700:Apr 12th, 2016  ~1704:Apr 18th, 2016  ~1705:Apr 18th, 2016  ~1706:Apr 18th, 2016  ~1707:Apr 18th, 2016  ~1730:Apr 21st, 2016  ~1731:Apr 21st, 2016  ~1732:Apr 21st, 2016  ~1733:Apr 21st, 2016  ~1740:Apr 29th, 2016  ~1741:Apr 29th, 2016  ~1742:Apr 29th, 2016  ~1743:Apr 29th, 2016  ~1768:May 7th, 2016  ~1769:May 7th, 2016  ~1770:May 7th, 2016  ~1771:May 7th, 2016  ~1772:May 8th, 2016  ~1773:May 8th, 2016  ~1793:Jun 13th, 2016  ~1794:Jun 13th, 2016  ~1795:Jun 13th, 2016  ~1796:Jun 13th, 2016  ~1797:Jun 13th, 2016  ~1798:Jun 13th, 2016  ~1799:Jun 13th, 2016  ~1800:Jun 13th, 2016  ~1965:Sep 30th, 2016  ~1966:Sep 30th, 2016  ~2039:Dec 21st, 2016  ",
+			"project_summary": "Likoswe wants to build a nursery school to solve a persistent problem involving early childhood education. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.5225, -15.6576]
+		},
+		"properties": {
+			"id": "77",
+			"name": "Build a Nursery School",
+			"villageName": "Maluwa",
+            "icon": "nursery",
+			"picture_filename": "thumb_757_default_buy_list.jpeg",
+			"project_budget": "2000",
+			"project_funded": "2000",
+		 	"updatePictures": "297:Dec 12th, 2014 A little boy stands tall and casts a skeptical eye at the photographer attending a Village X meeting for Maluwa and Mwanga Villages in Phalombe, Malawi, in April 2014. We think he'll warm up.~298:Dec 12th, 2014 Maluwa and Mwanga Villages attend a Village X meeting in April 2014. This meeting set the record for most number of people in attendance at a Village X meeting in Malawi.~299:Dec 12th, 2014 A motorcycle sits at a community high school in Maluwa Village, Malawi. Motorcycles are fairly rare in rural Malawi -- most people get around on foot or bicycle.~300:Dec 12th, 2014 Here's a landscape shot from Maluwa Village, Malawi. The village is located along a road that runs from Zomba Mountain to Mulanje Mountain. Phalombe Mountain is visible in the distance.~658:Feb 3rd, 2015 Here's the project budget from the community.~659:Feb 3rd, 2015 The village has a message for you!~1648:Mar 15th, 2016 Funds have arrived. The community plans its next moves.~1649:Mar 15th, 2016 The project committee poses in front of bricks burned by the community for the nursery school.~1650:Mar 15th, 2016 The project committee buys building supplies in town. About 75% of the supplies are sourced from town; 25% are sourced from nearby villages.~1651:Mar 15th, 2016  ~1652:Mar 15th, 2016  ~1653:Mar 15th, 2016  ~1654:Mar 15th, 2016  ~1655:Mar 15th, 2016  ~1660:Mar 16th, 2016  ~1661:Mar 16th, 2016  ~1662:Mar 16th, 2016  ~1663:Mar 16th, 2016  ~1667:Mar 18th, 2016  ~1668:Mar 18th, 2016  ~1666:Mar 18th, 2016  ~1672:Mar 21st, 2016  ~1673:Mar 21st, 2016  ~1676:Mar 27th, 2016  ~1677:Mar 27th, 2016  ~1679:Mar 29th, 2016  ~1680:Mar 29th, 2016  ~1681:Mar 29th, 2016  ~1685:Apr 5th, 2016  ~1686:Apr 5th, 2016  ~1687:Apr 5th, 2016  ~1691:Apr 6th, 2016  ~1692:Apr 6th, 2016  ~1693:Apr 6th, 2016  ~1729:Apr 21st, 2016  ~1736:Apr 27th, 2016  ~1737:Apr 27th, 2016  ~1738:Apr 27th, 2016  ~1739:Apr 27th, 2016  ~1746:May 1st, 2016  ~1801:Jun 13th, 2016  ~1803:Jun 13th, 2016  ~1802:Jun 13th, 2016  ~1904:Sep 3rd, 2016  ~1905:Sep 3rd, 2016  ~1906:Sep 3rd, 2016  ",
+			"project_summary": "Maluwa wants to build a nursery school to solve a persistent problem involving early childhood education. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3615, -15.8022]
+		},
+		"properties": {
+			"id": "78",
+			"name": "Build a School Staff Office",
+			"villageName": "Manyumba",
+            "icon": "office",
+			"picture_filename": "thumb_766_default_buy_list.jpeg",
+			"project_budget": "1900",
+			"project_funded": "1900",
+		 	"updatePictures": "317:Dec 13th, 2014 Two boys ride an adult-sized bike through Manyumba Village, Malawi. Mulanje Mountain towers in the background.~318:Dec 13th, 2014 A girl in Manyumba Village, Malawi, walks to an open-air market. Balanced on her head are food items for sale, contained in a bowl wrapped in a chitenje, a traditional fabric used by women for a variety of things, including covering their legs (see above) and carrying babies on their backs.~320:Dec 13th, 2014 This girl walks to market in Manyumba Village, Malawi, with maize for sale perched on her head. She's wearing her primary school uniform, the colors of which are unique to her school.~660:Feb 3rd, 2015 The village project committee meets to create the proposal and budget.~661:Feb 3rd, 2015 Here's the project budget written by the community.~1853:Jul 14th, 2016  ~1854:Jul 14th, 2016  ~1855:Jul 14th, 2016  ~1856:Jul 14th, 2016  ~1857:Jul 14th, 2016  ~1858:Jul 14th, 2016  ~1859:Jul 14th, 2016  ~1860:Jul 14th, 2016  ~1861:Jul 14th, 2016  ~1864:Jul 15th, 2016  ~1865:Jul 15th, 2016  ~1867:Jul 22nd, 2016  ~1868:Jul 22nd, 2016  ~1871:Jul 22nd, 2016  ~1872:Jul 22nd, 2016  ~1873:Jul 22nd, 2016  ~1880:Aug 1st, 2016  ~1881:Aug 1st, 2016  ~1882:Aug 1st, 2016  ~1883:Aug 1st, 2016  ~1890:Aug 21st, 2016  ~1891:Aug 21st, 2016  ~1892:Aug 21st, 2016  ~1893:Aug 21st, 2016  ~1907:Sep 3rd, 2016  ~1908:Sep 3rd, 2016  ~1909:Sep 3rd, 2016  ~1926:Sep 14th, 2016  ~1927:Sep 14th, 2016  ~1928:Sep 14th, 2016  ~1929:Sep 14th, 2016  ~1930:Sep 14th, 2016  ~1931:Sep 14th, 2016  ~1932:Sep 14th, 2016  ",
+			"project_summary": "Manyumba wants to build a teacher's office at the community's primary school to solve a persistent problem. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3376, -15.4767]
+		},
+		"properties": {
+			"id": "79",
+			"name": "Start a Goat Herd",
+			"villageName": "Nakhwala",
+            "icon": "livestock",
+			"picture_filename": "thumb_451_default_buy_list.jpeg",
+			"project_budget": "2000",
+			"project_funded": "2006",
+		 	"updatePictures": "309:Dec 12th, 2014 On sunny days, this large granite rock is used for drying wet clothes or freshly harvested corn kernels (the white spot in the background is corn). It's also nice high ground from which to take in the surrounding view of village homesteads.~308:Dec 12th, 2014 Here's a building without a roof in the middle of Nakhwala Village, Malawi. In the background are eucalyptus trees (local name: blue gum) that grow fast and straight, making them the preferred tree for use in roofing structures. Unfortunately, they consume a lot of water as they grow.~307:Dec 12th, 2014 This is a poignant shot from Nakhwala Village, Malawi of the staple crop -- corn.  Having been picked, these stalks are withering during the dry season that follows the rainy seasons and harvest. The bushy, green object in the background is a mango tree.~679:Feb 3rd, 2015 Here's the project budget written by the community.~680:Feb 3rd, 2015 The village project committee has a message for you!~1588:Jan 20th, 2016  ~1589:Jan 20th, 2016  ~1590:Jan 20th, 2016  ~1591:Jan 20th, 2016  ~1592:Jan 20th, 2016  ~1593:Jan 20th, 2016  ~1594:Jan 20th, 2016  ~1595:Jan 20th, 2016  ~1596:Jan 20th, 2016  ~1597:Jan 20th, 2016  ~1599:Jan 20th, 2016  ~1600:Jan 20th, 2016  ~1601:Jan 20th, 2016  ~1806:Jun 13th, 2016  ~1807:Jun 13th, 2016  ",
+			"project_summary": "Nakhwala wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3519, -15.8059]
+		},
+		"properties": {
+			"id": "80",
+			"name": "Build a Teacher House",
+			"villageName": "Namphungo",
+            "icon": "house",
+			"picture_filename": "thumb_768_default_buy_list.jpeg",
+			"project_budget": "1800",
+			"project_funded": "1807",
+		 	"updatePictures": "350:Dec 14th, 2014 A woman listens intently at a Friends of Village X meeting in Namphungo, Malawi. She has wrapped her head with a gorgeous piece of chitenje, a traditional fabric used by women for many things, including carrying babies on their backs and covering their legs.~322:Dec 14th, 2014 Residents of the villages surrounding Namphungo Village, Malawi, return home from a trip to the Namphungo market. Malawian markets are full of stimulation -- friends, fresh meat and produce, barbers, bike mechanics, and pop-up restaurants. They're a sight to behold.~323:Dec 14th, 2014 Residents of Namphungo Village, Malawi, wait outside a grinding mill. Malawians grow and dry a lot of corn. They visit the grinding mill when they need fresh corn flour to make nsima, the staple carbohydrate served at least twice per day.~681:Feb 3rd, 2015 Here's the project budget written by the community.~682:Feb 3rd, 2015 The village project committee meets to write a proposal and budget.~1267:Sep 11th, 2015 Namphungo received the money! The project committee will immediately begin clearing a site for the new teacher's house at the primary school and buying construction materials. Here is the committee in front of bricks contributed by the community.~1268:Sep 11th, 2015 Students at Namphungo's primary school attempt to answer a question posed by their teacher. Do you think Malawian kids are serious about education?~1271:Sep 12th, 2015 The project committee surveys the site chosen for the teacher house. Land clearing will begin today, and the committee will purchase construction materials on Monday.~1276:Sep 15th, 2015 Members of the project committee traveled to Blantyre (closest city) to buy supplies for the teacher's house.~1277:Sep 15th, 2015 The supplies for the teacher's house arrived safely in Namphungo. Students worked hard to unload them from the truck.~1280:Sep 16th, 2015 Women in Namphungo Village inspect early stages of the teacher house. Workers have marked the perimeter of the house and dug a trench for the concrete foundation.~1281:Sep 16th, 2015 Bricks surround the construction site of the soon-to-be teacher house in Namphungo. Their distinctive red color comes from the local soils.~1286:Sep 20th, 2015 Namphungo used bricks and cement to build a foundation for its teacher's house. Looks like the foundation is still drying.~1287:Sep 20th, 2015 Here's a close-up of the foundation, taken from a different angle.~1292:Sep 24th, 2015 The teacher house continues to rise at breakneck speed. A local bricklayer does his thing.~1293:Sep 24th, 2015 Here's a look from above. This picture captures a lot of hard work.~1308:Sep 26th, 2015 Brickwork is nearly done on this side of the house. Love the budding mango tree in the upper right corner.~1309:Sep 26th, 2015 Workers continue to lay bricks and build walls around the house. It's going up very fast!~1310:Sep 26th, 2015 A worker digs a deep hole next to the teacher's house. It will become an outhouse for the teacher and his\/her family.~1319:Oct 1st, 2015 The front of the house is almost done. Window frames are in. The porch pillar looks strong.~1318:Oct 1st, 2015 Here's the back of the house, complete with window and door frames. The back door will open into a courtyard, where the teacher's family will prepare food.~1343:Oct 3rd, 2015 The roofing boards have arrived! Workers are preparing the boards for installation.~1344:Oct 3rd, 2015 Workers install the roofing boards. They will hold up the variegated steel roof.~1345:Oct 5th, 2015 Workers installed the steel roof. Here's a view from the front of the teacher house.~1346:Oct 5th, 2015 Here's a view from the back. The toilet is under construction in the foreground.~1359:Oct 13th, 2015  ~1358:Oct 13th, 2015  ~1357:Oct 13th, 2015  ~1366:Oct 15th, 2015 Here's the house from the front. The pic we received was very dark, so we brightened it and made it black and white.~1370:Oct 21st, 2015  ~1371:Oct 21st, 2015  ~1372:Oct 21st, 2015  ~1373:Oct 21st, 2015  ~1378:Oct 26th, 2015 Handover day is here! The community will celebrate the completion of its new teacher house.~1379:Oct 26th, 2015 Patricia Kaliati, Namphungo's Member of Parliament, opens the house to the public.~1380:Oct 26th, 2015 Village X supporters, including Country Rep Myson Jambo, escort Member of Parliament, Patricia Kaliati, across the soccer field at the primary school.~1381:Oct 26th, 2015 The community attends a meeting to celebrate the house -- complete with speeches, speeches, and more speeches.~1382:Oct 26th, 2015 Local soccer teams provided entertainment for the crowd, in honor of the event.~1383:Oct 26th, 2015 In a moment of grand political theater, the Member of Parliament scores a penalty kick.~1384:Oct 26th, 2015 Village X Country Rep, Myson Jambo, fields questions from the media.~1385:Oct 26th, 2015 This lucky teacher (left) and his family will live in the new house.~1386:Oct 26th, 2015 PROJECT COMPLETE! Crowdfunded by many and dedicated to the generosity of early supporters Judith, George and Hannah Braun.~1808:Jun 13th, 2016  ",
+			"project_summary": "Namphungo wants to build a teacher's house at the community's primary school to solve a persistent problem. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.332, -15.4789]
+		},
+		"properties": {
+			"id": "81",
+			"name": "Start a Goat Herd (G4G, AMS)",
+			"villageName": "Saiti",
+            "icon": "livestock",
+			"picture_filename": "thumb_452_default_buy_list.jpeg",
+			"project_budget": "2133",
+			"project_funded": "2133.5",
+		 	"updatePictures": "303:Dec 12th, 2014 Village soccer matches are hugely popular social gatherings in rural Malawi. Here, Saiti Village in Zomba District plays a match against a rival village.~304:Dec 12th, 2014 Here's another shot of the soccer game in Saiti Village, Malawi. In the foreground, Myson Jambo (country rep for Friends of Village X) and his father proudly wear our logo -- reward good development. By \"good,\" we mean small scale, community led, completely transparent development.~305:Dec 12th, 2014 Enterprising women in Saiti Village return from market carrying goods for sale on their heads and babies on their backs. Women sell much of the produce in village markets, and often transport it to and from market by foot.~683:Feb 3rd, 2015 Here's the project budget written by the community.~684:Feb 3rd, 2015 The project committee has a message for you!~1709:Apr 20th, 2016  ~1710:Apr 20th, 2016  ~1711:Apr 20th, 2016  ~1712:Apr 20th, 2016  ~1713:Apr 20th, 2016  ~1714:Apr 20th, 2016  ~1715:Apr 20th, 2016  ~1716:Apr 20th, 2016  ~1717:Apr 20th, 2016  ~1718:Apr 20th, 2016  ~1719:Apr 20th, 2016  ~1720:Apr 20th, 2016  ~1721:Apr 20th, 2016  ~1722:Apr 20th, 2016  ~1723:Apr 20th, 2016  ~1724:Apr 20th, 2016  ~1725:Apr 20th, 2016  ~1726:Apr 20th, 2016  ~1727:Apr 20th, 2016  ~1728:Apr 20th, 2016  ~1809:Jun 13th, 2016  ~1810:Jun 13th, 2016  ",
+			"project_summary": "Saiti wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3493, -15.4894]
+		},
+		"properties": {
+			"id": "83",
+			"name": "Provide Clean Water",
+			"villageName": "Mlenga",
+            "icon": "water",
+			"picture_filename": "thumb_483_default_buy_list.png",
+			"project_budget": "6600",
+			"project_funded": "6622",
+		 	"updatePictures": "476:Dec 25th, 2014 Women in Mlenga Village must climb into this hole to fetch water for drinking and cooking. The process is a feat of teamwork and gymnastics. During the rainy season (December to March), the water is muddy. Yet, whether clear or muddy, it is unsanitary year-round.~479:Dec 25th, 2014 This is another way of getting water in Mlenga during the rainy season. The irony is that, during the rainy season, water is everywhere. It's just not safe to drink.~477:Dec 25th, 2014 Women and girls fetch water in Malawi. In Mlenga Village, they fetch dirty water out of necessity, not choice. They then care for family members sickened by the water. A borehole would make their lives much easier.~475:Dec 25th, 2014 Mlenga decided to build a borehole to provide clean water to 90 families. Mlenga formed a committee to plan, implement, partially finance and document the project. Here is the committee marking the spot of the future borehole.~474:Dec 25th, 2014 Mlenga's project committee researched companies to drill the borehole. It selected a company that usually charges $10,000 per borehole. Because the community is leading this borehole project, the company lowered its price to $7,000. That's amazing!~480:Dec 25th, 2014 Mlenga has contributed over $400 of its own money to the project. That's a HUGE amount of money for people living on less than $2 per day. The money has been deposited in a bank account for safekeeping.~662:Feb 2nd, 2015 The drilling equipment leaves the paved road. Mlenga Village lies several kilometers away, down a dirt road.~664:Feb 2nd, 2015 About a kilometer from Mlenga Village, the drilling truck gets stuck in the mud! This is a common occurrence during the rainy season.~665:Feb 2nd, 2015 The villagers lend a hand, using hoes to free the truck from the mud.~663:Feb 2nd, 2015 A big push from the community frees the truck. On to Mlenga Village!~666:Feb 2nd, 2015 The drilling company sets up the equipment. They will drill to a depth of 60 meters.~667:Feb 2nd, 2015 Here's a close-up of the drilling equipment. This drills hundreds of wells in Malawi each year.~668:Feb 2nd, 2015 A worker from the drilling company monitors the drilling. They should hit water soon.~669:Feb 2nd, 2015 Mlenga Village watches the drilling progress. A village committee will maintain the well after it's completed and starts providing clean water to 90 households.~670:Feb 2nd, 2015 Here's a close-up of the drilling hole. A lot goes into digging a good well.~671:Feb 2nd, 2015 There's some water! We're getting close.~672:Feb 2nd, 2015 After the hole is dug, the drilling company will install these PCV pipes. They are like a giant straw that sucks water from the underlying aquifer.~674:Feb 2nd, 2015 The community bricks in the background will be used to build the well's foundation and spill way.~673:Feb 2nd, 2015 Clean water starting to appear, against a bucolic Malawian backdrop!~675:Feb 2nd, 2015 There's the signature geyser of success! Your contributions made this possible.~691:Feb 3rd, 2015 Workers prepare to install the well's pumping mechanism.~692:Feb 3rd, 2015 Having anchored the pumping mechanism, workers start to outline the spillway with bricks.~693:Feb 3rd, 2015 Workers lay cement for the spillway.~694:Feb 3rd, 2015 The spillway will carry spilled water to a nearby garden. That way, it won't be wasted!~695:Feb 3rd, 2015 Workers install the pumping mechanism!~777:Feb 24th, 2015 The village gathers to celebrate the opening of the well! The cement is dry. The well is ready for use.~778:Feb 24th, 2015 Village residents dance at the gathering, celebrating how their hard work and hard-earned money led to this achievement.~779:Feb 24th, 2015 These folks have a message for the compassionate people in the USA who invested in Mlenga's clean water project.~780:Feb 24th, 2015 Mlenga's sanitation and maintenance committees will take care of the well and ensure that it will produce clean and healthy water for many years to come.~781:Feb 24th, 2015 The party is over. Back to the hard work of cultivating the fields and plugging rainy-season leaks in the roof. Oh, and those kids will now drink clean water.~782:Feb 24th, 2015 This is what the well will look like on a daily basis -- women (mostly) fetching water for their families. No more dirty water for Mlenga!~932:Apr 30th, 2015 Mlenga's borehole works very well, providing clean water during the dry seasons. The community added a wooden frame around the pump mechanism to reduce wear and tear. The pump lever hits the frame instead of the internal stopping mechanism, prolonging the life of internal parts.~1270:Sep 12th, 2015 This graph shows waterborne illness rates for Mlenga (and surrounding villages) from Oct 2014 through August 2015. None of the villages had a death in August caused by waterborne illness. According to the local health center, the rates in Nachuma Village (which lacks a deep well) are falling because residents are using their bicycles to collect water from Mlenga and other villages with clean water.~1497:Dec 17th, 2015  ~1498:Dec 17th, 2015  ~1804:Jun 13th, 2016  ",
+			"project_summary": "After losing a child to cholera, Mlenga Village came together to plan and partially finance a deep well project that will provide clean water to 90 families. Mlenga has contributed construction materials and over $400 of its own money -- a HUGE sum for people living on less than two dollars a day. Mlenga researched and selected a well drilling company that will complete the project for $7,000, about three thousand dollars less than the market price for such projects. The drilling company applied the discount because Mlenga is organizing the project for itself, not relying on an outside organization. Mlenga needs about $6,500, and, once we raise the money, the company will complete the project (takes about two days) and you will receive live mobile updates of impact showing you exactly how your money was spent to help a village get clean water."
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.1487, -15.8347]
+		},
+		"properties": {
+			"id": "85",
+			"name": "Provide Clean Water",
+			"villageName": "Likoswe",
+            "icon": "water",
+			"picture_filename": "thumb_1002_default_buy_list.png",
+			"project_budget": "7200",
+			"project_funded": "7200",
+		 	"updatePictures": "1003:Jun 18th, 2015 These are existing conditions in Likoswe Village. Women are fetching water from open water sources, like streams and rivers.~1004:Jun 18th, 2015 Likoswe's project committee sends a message and chooses a spot for the proposed borehole.~1005:Jun 18th, 2015 Here's Likoswe's proposed budget. The cost of borehole installation was subsequently re-negotiated downward from 3.5M kwacha to 3.1M kwacha.~1006:Jun 18th, 2015 Likoswe will contribute cash, labor, bricks and committees to maintain the borehole and keep it clean. Here are the bricks.~1007:Jun 18th, 2015 An employee of the drilling company performs a survey to determine the approximate depth of the underlying aquifer.~1008:Jun 18th, 2015 The drilling truck arrives! Great news.~1009:Jun 18th, 2015 The drilling begins! Now we're cooking.~1010:Jun 18th, 2015 Several members of Likoswe Village lend a hand. It's a community effort that benefits everyone.~1011:Jun 18th, 2015 The entire operation pauses for lunch. Of course, nsima (corn mush Malawian staple) is on the menu.~1012:Jun 18th, 2015 The drill strikes the aquifer, releasing a wave of pressure and a geyser of water.~1013:Jun 18th, 2015 A worker smoothes cement around the base of the borehole. Bricks create the underlying structure.~1014:Jun 18th, 2015 Women in Likoswe Village help workers from the drilling company form tubing for the inside of the borehole. The tubing will draw water from the aquifer to the surface.~1015:Jun 18th, 2015 The borehole is finished and tested. As expected, the water is crystal clear!~1016:Jun 18th, 2015 The finished borehole is locked for a week to allow the cement to dry.~1036:Jun 23rd, 2015 The paramount chief of the area unlocks the borehole, announcing that it's ready for public use. The borehole was idle for a week to allow its cement foundation to dry.~1037:Jun 23rd, 2015 Women in Likoswe test the deep well, as onlookers smile at the clean water.~1035:Jun 23rd, 2015 Women in Likoswe dance and sing in celebration of the well's opening. These women will benefit the most from the clean, accessible water.",
+			"project_summary": "Likoswe Village has struggled with dirty water for a long time. After one of its girls was raped fetching water from a stream, Likoswe came together to plan and partially finance a deep well project that will provide clean water to 187 households and 738 people. Likoswe has contributed construction materials and over $400 of its own money -- a HUGE sum for people living on less than two dollars a day. A reputable and trusted well drilling company will complete the project for $7,000, about three thousand dollars less than the market price for such projects. The drilling company applied the discount because Likoswe is organizing the project for itself, not relying on an outside organization. International money transfer fees account for the remaining cost. Partner Water Charity has filled the funding gap as part of its newly created Malawi Borehole Program. The drilling company will complete the project over the span of only a few days and, as always, we'll post live picture updates of impact showing Village X supporters exactly how the money was spent to help a village get clean water."
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.5292, -15.6418]
+		},
+		"properties": {
+			"id": "86",
+			"name": "Provide Clean Water",
+			"villageName": "Mwanga",
+            "icon": "water",
+			"picture_filename": "thumb_1204_default_buy_list.jpeg",
+			"project_budget": "7200",
+			"project_funded": "7200",
+		 	"updatePictures": "1188:Jul 27th, 2015 Eazy Borehole Drillers arrives and starts drilling.~1189:Jul 27th, 2015 Kids gather around the drill, watching the workers summon water from the ground.~1190:Jul 27th, 2015 Water and sediment spray from the ground, as the drill digs deeper.~1191:Jul 27th, 2015 A young girl watches the drilling, a few feet away from the PVC tubing that will connect the community to the underlying aquifer and make her life a lot better.~1192:Jul 27th, 2015 Everyone chips in to help. Women and children carry sand for the finishing cement, as men operate the drilling hardware.~1193:Jul 27th, 2015 The drill strikes clean water from the aquifer!~1194:Jul 27th, 2015 Women celebrate the arrival of clean water. This is great news for them and their families.~1195:Jul 27th, 2015 A worker installs the metal base of the borehole.~1196:Jul 27th, 2015 Men from Mwanga help install the PVC piping, one tube at a time.~1197:Jul 27th, 2015 Workers finish installing the borehole's hardware and start creating the spillway.~1198:Jul 27th, 2015 Workers test the pump and confirm that the water is pure and delicious.~1199:Jul 27th, 2015 The spillway takes shape, as the community positions the underlying bricks.~1200:Jul 27th, 2015 Workers smear cement over the bricks, forming a nice, smooth spillway.~1201:Jul 27th, 2015 Workers use a trowel to complete the cement work.~1202:Jul 27th, 2015 The spillway is done. The cement must cure for two weeks before the community can use the well.~1230:Aug 20th, 2015 Mwanga Village says a prayer at a ceremony marking the opening of the new well.~1231:Aug 20th, 2015 Two men from Mwanga Village test the well. They look pleased.~1232:Aug 20th, 2015 Ok, maybe some (little) members of the village aren't so impressed. They'll be healthier, though.~1233:Aug 20th, 2015 This is the portrait of a community-led project. Good job, Mwanga!",
+			"project_summary": "Mwanga Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3279, -15.7409]
+		},
+		"properties": {
+			"id": "87",
+			"name": "Provide Clean Water",
+			"villageName": "Kazembe",
+            "icon": "water",
+			"picture_filename": "thumb_1248_default_buy_list.png",
+			"project_budget": "7200",
+			"project_funded": "7200",
+		 	"updatePictures": "1253:Sep 6th, 2015 A woman retrieves water from a muddy pool on the outskirts of the village.~1254:Sep 6th, 2015 Women wash clothing in the same water source that others use for drinking.~1334:Oct 1st, 2015  ~1335:Oct 1st, 2015  ~1336:Oct 1st, 2015  ~1337:Oct 1st, 2015  ~1338:Oct 1st, 2015  ~1339:Oct 1st, 2015  ~1340:Oct 1st, 2015  ~1341:Oct 1st, 2015  ~1342:Oct 1st, 2015  ~1360:Oct 13th, 2015  ~1361:Oct 13th, 2015  ~1362:Oct 13th, 2015  ~1363:Oct 13th, 2015  ~1791:Jun 13th, 2016  ~1792:Jun 13th, 2016  ",
+			"project_summary": "Kazembe Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3759, -15.7002]
+		},
+		"properties": {
+			"id": "88",
+			"name": "Provide Clean Water",
+			"villageName": "Bakili",
+            "icon": "water",
+			"picture_filename": "thumb_1252_default_buy_list.png",
+			"project_budget": "7200",
+			"project_funded": "7200",
+		 	"updatePictures": "1255:Sep 6th, 2015 The community currently fetches water from shallow wells like this one near the river.~1256:Sep 6th, 2015 Existing conditions: a girl retrieving water from a shallow hole in the ground.~1322:Oct 1st, 2015  ~1323:Oct 1st, 2015  ~1324:Oct 1st, 2015  ~1325:Oct 1st, 2015  ~1326:Oct 1st, 2015  ~1327:Oct 1st, 2015  ~1328:Oct 1st, 2015  ~1329:Oct 1st, 2015  ~1330:Oct 1st, 2015  ~1331:Oct 1st, 2015  ~1332:Oct 1st, 2015  ~1333:Oct 1st, 2015  ~1350:Oct 9th, 2015  ~1351:Oct 9th, 2015  ~1352:Oct 9th, 2015  ~1353:Oct 9th, 2015  ~1354:Oct 9th, 2015  ~1355:Oct 9th, 2015  ~1446:Nov 21st, 2015  ~1519:Dec 17th, 2015  ~1783:Jun 13th, 2016  ",
+			"project_summary": "Bakili Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.2187, -15.4913]
+		},
+		"properties": {
+			"id": "89",
+			"name": "Provide Clean Water (G4G)",
+			"villageName": "Chitimbe",
+            "icon": "water",
+			"picture_filename": "thumb_1476_default_buy_list.png",
+			"project_budget": "6600",
+			"project_funded": "6600",
+		 	"updatePictures": "1755:May 4th, 2016  ~1756:May 4th, 2016  ~1757:May 4th, 2016  ~1758:May 4th, 2016 This broken borehole was installed years ago and only to a depth of 6 meters.~1820:Jun 23rd, 2016  ~1821:Jun 23rd, 2016  ~1822:Jun 23rd, 2016  ~1823:Jun 23rd, 2016  ~1824:Jun 23rd, 2016  ~1825:Jun 23rd, 2016  ~1826:Jun 23rd, 2016  ~1827:Jun 23rd, 2016  ~1828:Jun 23rd, 2016  ~1829:Jun 23rd, 2016  ~1830:Jun 23rd, 2016  ~1837:Jun 29th, 2016  ~1838:Jun 29th, 2016  ~1839:Jun 29th, 2016  ~1840:Jun 29th, 2016  ~1844:Jul 14th, 2016  ~1845:Jul 14th, 2016  ~1846:Jul 14th, 2016  ~1847:Jul 14th, 2016  ~1848:Jul 14th, 2016  ~1849:Jul 14th, 2016  ~1850:Jul 14th, 2016  ~1851:Jul 14th, 2016 Community members perform a drama during the handing-over ceremony.~1852:Jul 14th, 2016  ",
+			"project_summary": "Chitimbe Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.352, -15.486]
+		},
+		"properties": {
+			"id": "90",
+			"name": "Provide Clean Water",
+			"villageName": "Siyabu",
+            "icon": "water",
+			"picture_filename": "thumb_1496_default_buy_list.jpeg",
+			"project_budget": "6000",
+			"project_funded": "6000",
+		 	"updatePictures": "1499:Dec 17th, 2015  ~1500:Dec 17th, 2015  ~1501:Dec 17th, 2015  ~1502:Dec 17th, 2015  ~1503:Dec 17th, 2015  ~1504:Dec 17th, 2015  ~1505:Dec 17th, 2015  ~1506:Dec 17th, 2015  ~1507:Dec 17th, 2015  ~1508:Dec 17th, 2015  ~1509:Dec 17th, 2015  ~1510:Dec 17th, 2015  ~1511:Dec 17th, 2015  ~1512:Dec 17th, 2015  ~1513:Dec 17th, 2015  ~1514:Dec 17th, 2015  ~1515:Dec 17th, 2015  ~1516:Dec 17th, 2015  ~1517:Dec 17th, 2015  ~1518:Dec 17th, 2015  ~1520:Dec 17th, 2015  ~1521:Dec 17th, 2015  ~1522:Dec 17th, 2015  ~1523:Dec 17th, 2015  ~1524:Dec 17th, 2015  ~1525:Dec 17th, 2015  ~1811:Jun 13th, 2016  ",
+			"project_summary": "Siyabu Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3516, -15.4901]
+		},
+		"properties": {
+			"id": "91",
+			"name": "Provide Clean Water",
+			"villageName": "Nachuma",
+            "icon": "water",
+			"picture_filename": "thumb_1495_default_buy_list.jpeg",
+			"project_budget": "6000",
+			"project_funded": "6000",
+		 	"updatePictures": "1556:Jan 6th, 2016  ~1557:Jan 6th, 2016  ~1558:Jan 6th, 2016  ~1559:Jan 6th, 2016  ~1560:Jan 6th, 2016  ~1561:Jan 6th, 2016  ~1562:Jan 6th, 2016  ~1563:Jan 6th, 2016  ~1564:Jan 6th, 2016  ~1565:Jan 6th, 2016  ~1566:Jan 6th, 2016  ~1567:Jan 6th, 2016  ~1568:Jan 6th, 2016  ~1569:Jan 6th, 2016  ~1570:Jan 6th, 2016  ~1571:Jan 6th, 2016  ~1572:Jan 6th, 2016  ~1573:Jan 6th, 2016  ~1574:Jan 6th, 2016  ~1575:Jan 6th, 2016  ~1805:Jun 13th, 2016  ",
+			"project_summary": "Nachuma Village wants to drill a borehole to provide clean water to village residents. They are currently drinking from unclean water sources. \r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.352, -15.8042]
+		},
+		"properties": {
+			"id": "92",
+			"name": "Start a Goat Herd",
+			"villageName": "Namphungo",
+            "icon": "livestock",
+			"picture_filename": "thumb_1815_default_buy_list.png",
+			"project_budget": "1800",
+			"project_funded": "1800",
+		 	"updatePictures": null,
+			"project_summary": "Namphungo wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3405, -15.4796]
+		},
+		"properties": {
+			"id": "93",
+			"name": "Grow More Food",
+			"villageName": "Nakhwala",
+            "icon": "farm",
+			"picture_filename": "thumb_1817_default_buy_list.png",
+			"project_budget": "1800",
+			"project_funded": "1873",
+		 	"updatePictures": "1999:Nov 14th, 2016  ~2000:Nov 14th, 2016  ~2001:Nov 14th, 2016  ~2002:Nov 14th, 2016  ~2003:Nov 14th, 2016  ~2004:Nov 14th, 2016  ~2005:Nov 14th, 2016  ~2006:Nov 14th, 2016  ~2007:Nov 14th, 2016  ~2008:Nov 14th, 2016  ~2009:Nov 14th, 2016  ~2010:Nov 14th, 2016  ~2011:Nov 14th, 2016  ~2012:Nov 14th, 2016  ",
+			"project_summary": "Nakhwala wants agricultural fertilizer to solve a persistent problem caused by poverty -- food insecurity. For most farmers, applying high quality fertilizer to hybrid seeds, at the right time, will significantly increase yields.\r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3357, -15.4781]
+		},
+		"properties": {
+			"id": "94",
+			"name": "Grow More Food",
+			"villageName": "Saiti",
+            "icon": "farm",
+			"picture_filename": "thumb_1816_default_buy_list.png",
+			"project_budget": "1800",
+			"project_funded": "1800",
+		 	"updatePictures": "2013:Nov 17th, 2016  ~2014:Nov 17th, 2016  ~2015:Nov 17th, 2016  ~2016:Nov 17th, 2016  ~2017:Nov 17th, 2016  ~2018:Nov 17th, 2016  ~2019:Nov 17th, 2016  ~2020:Nov 17th, 2016  ~2021:Nov 17th, 2016  ~2022:Nov 17th, 2016  ~2023:Nov 17th, 2016  ~2024:Nov 17th, 2016  ~2025:Nov 17th, 2016  ~2026:Nov 17th, 2016 To achieve even better results, the community collected goat manure to mix with the fertilizer.~2027:Nov 17th, 2016  ",
+			"project_summary": "Saiti wants agricultural fertilizer to solve a persistent problem caused by poverty -- food insecurity. For most farmers, applying high quality fertilizer to hybrid seeds, at the right time, will significantly increase yields.\r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3445, -15.4701]
+		},
+		"properties": {
+			"id": "95",
+			"name": "Grow More Food",
+			"villageName": "Chikumbu",
+            "icon": "farm",
+			"picture_filename": "thumb_1818_default_buy_list.png",
+			"project_budget": "1800",
+			"project_funded": "1800",
+		 	"updatePictures": "1985:Nov 13th, 2016  ~1986:Nov 13th, 2016  ~1987:Nov 13th, 2016  ~1988:Nov 13th, 2016  ~1989:Nov 13th, 2016  ~1990:Nov 13th, 2016  ~1991:Nov 13th, 2016  ~1992:Nov 13th, 2016  ~1993:Nov 13th, 2016  ~1994:Nov 13th, 2016  ~1995:Nov 13th, 2016  ~1996:Nov 13th, 2016  ~1997:Nov 13th, 2016  ~1998:Nov 13th, 2016  ",
+			"project_summary": "Chikumbu wants agricultural fertilizer to solve a persistent problem caused by poverty -- food insecurity. For most farmers, applying high quality fertilizer to hybrid seeds, at the right time, will significantly increase yields.\r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3756, -15.7022]
+		},
+		"properties": {
+			"id": "96",
+			"name": "Build a Nursery School",
+			"villageName": "Bakili",
+            "icon": "nursery",
+			"picture_filename": "thumb_2088_default_buy_list.png",
+			"project_budget": "2000",
+			"project_funded": "2000",
+		 	"updatePictures": "2089:Apr 27th, 2017  ~2090:Apr 27th, 2017  ~2091:Apr 27th, 2017  ~2092:Apr 27th, 2017  ~2094:Apr 27th, 2017  ~2095:Apr 27th, 2017  ~2096:Apr 27th, 2017  ~2097:Apr 27th, 2017  ~2098:Apr 27th, 2017  ~2099:Apr 27th, 2017  ~2100:Apr 27th, 2017  ~2116:May 4th, 2017  ~2117:May 4th, 2017  ~2118:May 4th, 2017  ~2119:May 4th, 2017  ",
+			"project_summary": "Bakili wants to build a nursery school to solve a persistent problem involving early childhood education. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3605, -15.8039]
+		},
+		"properties": {
+			"id": "98",
+			"name": "Start a Goat Herd",
+			"villageName": "Manyumba",
+            "icon": "livestock",
+			"picture_filename": "thumb_1916_default_buy_list.png",
+			"project_budget": "2000",
+			"project_funded": "100",
+		 	"updatePictures": null,
+			"project_summary": "Manyumba Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.329, -15.7383]
+		},
+		"properties": {
+			"id": "99",
+			"name": "Start a Goat Herd",
+			"villageName": "Kazembe",
+            "icon": "livestock",
+			"picture_filename": "thumb_2034_default_buy_list.jpeg",
+			"project_budget": "2000",
+			"project_funded": "1200",
+		 	"updatePictures": null,
+			"project_summary": "Kazembe Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3567, -15.4816]
+		},
+		"properties": {
+			"id": "101",
+			"name": "Start a Goat Herd",
+			"villageName": "Mlenga",
+            "icon": "livestock",
+			"picture_filename": "thumb_205_default_buy_list.jpeg",
+			"project_budget": "2000",
+			"project_funded": "1200",
+		 	"updatePictures": null,
+			"project_summary": "Mlenga Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. \r\n\r\n"
+
+		}
+	}]}

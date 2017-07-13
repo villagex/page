@@ -1,0 +1,341 @@
+{ "type": "FeatureCollection", "features": [{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.528, -15.643]
+		},
+		"properties": {
+			"id": "26",
+			"name": "Mwanga",
+			"picture_filename": "thumb_767_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.5277",
+			"boundsSwLat": "-15.6442",
+			"boundsNeLng": "35.5292",
+			"boundsNeLat": "-15.6418",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-0.876, 10.711]
+		},
+		"properties": {
+			"id": "27",
+			"name": "Awaradonne",
+			"picture_filename": "thumb_990_default_buy_list.png",
+			"fundingCount": "0",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "-0.87257",
+			"boundsSwLat": "10.7082",
+			"boundsNeLng": "-0.87257",
+			"boundsNeLat": "10.7082",
+			"projectCount": "1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.346, -15.474]
+		},
+		"properties": {
+			"id": "30",
+			"name": "Chikumbu",
+			"picture_filename": "thumb_1815_default_buy_list.png",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3445",
+			"boundsSwLat": "-15.4758",
+			"boundsNeLng": "35.3476",
+			"boundsNeLat": "-15.4701",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.33, -15.74]
+		},
+		"properties": {
+			"id": "31",
+			"name": "Kazembe",
+			"picture_filename": "thumb_755_default_buy_list.jpeg",
+			"fundingCount": "1",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3279",
+			"boundsSwLat": "-15.7426",
+			"boundsNeLng": "35.3307",
+			"boundsNeLat": "-15.7383",
+			"projectCount": "1 in funding, 2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.148, -15.83]
+		},
+		"properties": {
+			"id": "32",
+			"name": "Likoswe",
+			"picture_filename": "thumb_756_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.1487",
+			"boundsSwLat": "-15.8347",
+			"boundsNeLng": "35.1513",
+			"boundsNeLat": "-15.8323",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.523, -15.656]
+		},
+		"properties": {
+			"id": "33",
+			"name": "Maluwa",
+			"picture_filename": "thumb_757_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.5225",
+			"boundsSwLat": "-15.6576",
+			"boundsNeLng": "35.5225",
+			"boundsNeLat": "-15.6576",
+			"projectCount": "1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3608, -15.8031]
+		},
+		"properties": {
+			"id": "34",
+			"name": "Manyumba",
+			"picture_filename": "thumb_766_default_buy_list.jpeg",
+			"fundingCount": "1",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3605",
+			"boundsSwLat": "-15.8039",
+			"boundsNeLng": "35.3615",
+			"boundsNeLat": "-15.8022",
+			"projectCount": "1 in funding, 1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.341, -15.476]
+		},
+		"properties": {
+			"id": "35",
+			"name": "Nakhwala",
+			"picture_filename": "thumb_451_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3376",
+			"boundsSwLat": "-15.4796",
+			"boundsNeLng": "35.3405",
+			"boundsNeLat": "-15.4767",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.352, -15.805]
+		},
+		"properties": {
+			"id": "36",
+			"name": "Namphungo",
+			"picture_filename": "thumb_768_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3519",
+			"boundsSwLat": "-15.8059",
+			"boundsNeLng": "35.352",
+			"boundsNeLat": "-15.8042",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.336, -15.48]
+		},
+		"properties": {
+			"id": "37",
+			"name": "Saiti",
+			"picture_filename": "thumb_452_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.332",
+			"boundsSwLat": "-15.4789",
+			"boundsNeLng": "35.3357",
+			"boundsNeLat": "-15.4781",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.352, -15.486]
+		},
+		"properties": {
+			"id": "39",
+			"name": "Mlenga",
+			"picture_filename": "thumb_483_default_buy_list.png",
+			"fundingCount": "1",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3493",
+			"boundsSwLat": "-15.4894",
+			"boundsNeLng": "35.3567",
+			"boundsNeLat": "-15.4816",
+			"projectCount": "1 in funding, 1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.376, -15.701]
+		},
+		"properties": {
+			"id": "41",
+			"name": "Bakili",
+			"picture_filename": "thumb_1252_default_buy_list.png",
+			"fundingCount": "0",
+			"completedCount": "2",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3756",
+			"boundsSwLat": "-15.7022",
+			"boundsNeLng": "35.3759",
+			"boundsNeLat": "-15.7002",
+			"projectCount": "2 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.219, -15.49]
+		},
+		"properties": {
+			"id": "42",
+			"name": "Chitimbe",
+			"picture_filename": "thumb_1476_default_buy_list.png",
+			"fundingCount": "0",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.2187",
+			"boundsSwLat": "-15.4913",
+			"boundsNeLng": "35.2187",
+			"boundsNeLat": "-15.4913",
+			"projectCount": "1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.359, -15.4884]
+		},
+		"properties": {
+			"id": "43",
+			"name": "Siyabu",
+			"picture_filename": "thumb_1496_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.352",
+			"boundsSwLat": "-15.486",
+			"boundsNeLng": "35.352",
+			"boundsNeLat": "-15.486",
+			"projectCount": "1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.3519, -15.4892]
+		},
+		"properties": {
+			"id": "44",
+			"name": "Nachuma",
+			"picture_filename": "thumb_1495_default_buy_list.jpeg",
+			"fundingCount": "0",
+			"completedCount": "1",
+			"constructionCount": "0",
+			"boundsSwLng": "35.3516",
+			"boundsSwLat": "-15.4901",
+			"boundsNeLng": "35.3516",
+			"boundsNeLat": "-15.4901",
+			"projectCount": "1 completed",
+			"village_summary": ""
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-11.09, 8.5464]
+		},
+		"properties": {
+			"id": "45",
+			"name": "Jaiama Nimikoro",
+			"picture_filename": "thumb_2121_default_see_800x600.jpeg",
+			"fundingCount": "0",
+			"completedCount": "0",
+			"constructionCount": "0",
+			"boundsSwLng": "",
+			"boundsSwLat": "",
+			"boundsNeLng": "",
+			"boundsNeLat": "",
+			"projectCount": "",
+			"village_summary": "A village in the misty eastern mountains of Kono, where many work in diamond mining."
+		}
+	},{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-12.2504, 10.6888]
+		},
+		"properties": {
+			"id": "46",
+			"name": "Dalaba",
+			"picture_filename": "thumb_2120_default_see_800x600.jpeg",
+			"fundingCount": "0",
+			"completedCount": "0",
+			"constructionCount": "0",
+			"boundsSwLng": "",
+			"boundsSwLat": "",
+			"boundsNeLng": "",
+			"boundsNeLat": "",
+			"projectCount": "",
+			"village_summary": "Dalaba is a town and sub-prefecture in the Dalaba Prefecture in the Mamou Region of Guinea.<BR><BR>\n\nIt was once home to a sanatorium, and to Miriam Makeba, who last visited the town in 1988, when she came to see her niece, N'Tombi Makeba, who lived in Miriam's house (a round building dating to the French colonial period, but using the same form as traditional homes in the region) for a number of years in the 1980s. The town is also known for its local strawberries. The town of Dalaba is the highest (in altitude) town in Guinea. It is approximately 200 km by air from the capital Conakry and about 280 km by road. The inhabitants of Dalaba are mostly Fula.\n<BR><BR>\nThe market day in Dalaba is Sunday.\n<BR><BR>\nThe women of Dalaba dye cotton damask fabric a rich-hued indigo in detailed tie-dyed patterns."
+		}
+	}]}

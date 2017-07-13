@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title>Village X</title>
+    
+    <!-- External Libraries and Stylesheets -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.css' type='text/css' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.min.js'></script>
+	
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+
+    <link rel="stylesheet" href="css/lightbox.css" />
+  	<script src="scripts/imagelightbox.min.js"></script>
+
+  	<script src="https://checkout.stripe.com/checkout.js"></script>
+  	
+ 	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
+	<script src="scripts/html5-canvas-bar-graph.js"></script>
+  	
+	<!-- External End -->
+
+  	<link rel="stylesheet" href="css/main.css" />
+  	
+  	<style>
+  	body, html {
+	  	height: 100%;
+	  	margin: 0;
+	  	padding: 0;
+		background:#999999;
+	}
+	
+	.bgimg-1 {
+	  	position: relative;
+	  	background-attachment: fixed;
+	  	background-position: center;
+	  	background-repeat: no-repeat;
+	  	background-size: cover;
+	  	background-image: url("images/bg-water-pump.jpg");
+	  	min-height: 100%;
+	
+	}
+
+	.caption {
+		vertical-align:center;
+		position: absolute;
+		left: 0;
+		top:100px;
+		width: 100%;
+		text-align: center;
+		color: #000;
+		text-weight:bold;
+		opacity:.8;
+	}
+	
+	.caption div.border {
+		background-color: #111;
+		color: #fff;
+		padding: 18px;
+		font-size: 1vw;
+		letter-spacing: .5vw;
+		border:2px #fff solid;
+		display:inline-block;
+	}
+	
+	
+	#map { 
+		position:absolute; 
+		top:0; 
+		bottom:0; 
+		width:100%; 
+		z-index:0;
+	}
+	
+	#mapScreenDiv {
+		position:relative;
+		height:100vh;
+	}
+	
+	#mapContainer {
+		position:relative;
+		padding:0px;
+		width:100%;
+		height:100%;
+	}
+	
+	#projectScroller {
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		overflow-x:scroll;
+		white-space:nowrap;
+		z-index:5;
+	}
+	
+	.hide-scrollbar ::-webkit-scrollbar-thumb{
+		   visibility : hidden;
+	}
+	
+	div.projectCell { 
+		background:white;
+		background-repeat:no-repeat;
+		background-size:30vh;
+		display:inline-block;
+		width:30vh;
+		margin-right:2px;
+		text-align:center;
+		cursor:pointer;
+		height:30vh;
+		-webkit-filter: contrast(1);
+		filter: contrast(1);
+		border:2px solid black;
+		border-radius:15px;
+		-moz-border-radius:15px;
+		overflow:hidden;
+	}
+	
+	div.pictureScroller {
+		margin:0px;
+		padding:0px;
+		height:0px;
+		width:100%;
+		overflow-x:scroll;
+		overflow-y:hidden;
+		white-space:nowrap;
+	}
+	
+	div.progressBar {
+		position:relative;
+		background-color:#CCCCCC;
+		height: 18px;
+		width:100%;
+		border:2px;
+		margin-left:0px;
+		margin-right:0px;
+	}
+	
+	div.progressBar-label {
+		position:absolute;
+		font-size:12px;
+		text-align:center;
+		width:100%;
+		top:-1px;
+		font-weight: bold;
+	}
+	
+	div.progressBar .ui-progressbar-value {
+		background-color:#8ABC5C;
+		padding:0px;
+		margin:0px;
+	}
+		
+	button {
+		cursor:pointer;
+		border: 0px;
+		-moz-radius:0px;
+		background-color:#8ABC5C;
+		color:white;
+	}
+	  
+	#imagelightbox {
+		position: fixed;
+		z-index: 9999;
+		 
+		-ms-touch-action: none;
+		touch-action: none;
+	}
+	
+	#modalBlock {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		background-color:#888888;
+		opacity:.4;
+		display:none;
+		z-index:4;
+	} 
+	
+	.donationHandle {
+		z-index:1;
+		position:absolute;
+		top:0px;
+		height:100%;
+		background-color:#7AAC4C;
+		border-top: solid 1px #CCCCCC;
+		border-bottom: solid 1px #CCCCCC;
+	}
+	
+	.mapboxgl-ctrl-geocoder {
+		font:15px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		position:relative;
+		background-color:white;
+		width:400px;
+		z-index:1;
+		border-radius:3px;
+	}
+	
+	.mapboxgl-ctrl-geocoder input[type='text'] {
+		font-size:12px;
+		width:100%;
+		border:0;
+		background-color:transparent;
+		height:20px;
+		margin:0;
+		color:rgba(0,0,0,.5);
+		padding:10px 10px 10px 40px;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	
+	div.expandoCell {
+		width:100vw;
+	   	height:calc(30vh - 10px);
+	   	padding-left: 5px;
+	   	padding-right: 5px;
+	   	padding-top: 5px;
+	   	padding-bottom: 5px;
+	   	overflow-y:scroll;
+	   	white-space:normal;
+	   	vertical-align:top;
+	    background-color:white;
+	}
+	
+	div.highlightedProject {
+		display:inline-block;
+		box-shadow: 10px 10px 5px #888888;
+		margin:10px;
+		height:80vh;
+		min-height:300px;
+		min-width:300px;
+		width:22%;
+		border-radius:30px;
+		border-style:solid;
+		border-width:1px;
+		background-size:100%;
+		background-repeat:no-repeat;
+		position:relative;
+		overflow:hidden;
+	}
+	
+	div.highlightedProjectInfo {
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		height:50%;
+		background-color:white;
+		border-bottom-left-radius:30px;
+		border-bottom-right-radius:30px;
+	}
+	
+	.shadow:before {
+	    display:block;
+	    content:'';
+	    position:absolute;
+	    width:100%;
+	    height:100%;
+	    -moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+	    -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+	    box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+	}
+	
+	.bottom-rounded {
+		border-bottom-left-radius:30px;
+		border-bottom-right-radius:30px;
+	}
+	
+	@media screen and (min-width:720px) {
+	   	div.expandoCell {
+	       	width:calc(99vw - 30vh);
+	       	margin-left:calc(30vh + 5px);
+	       	vertical-align:top;
+	       	border-top-left-radius:0px;
+	   }
+	  
+	}
+</style>
+</head>
+<body>
+	<!-- Top image -->
+	<!--<div class="bgimg-1">
+		<img id='logoImg' src='images/logo.png' style='position:absolute;top:5px;right:20px;width:200px;opacity:.9;' />
+	  	<script>
+	  		logoImg = $("#logoImg"); 
+	  		logoImg.on("mousemove", function() { logoImg.animate({ width: "250px"}, 500); });
+	  		logoImg.on("mouseleave", function() { logoImg.animate({ width: "200px"}, 500); });
+	  	</script>
+	  	<div class="caption">
+		    <div class="border">
+		    	Crowdfunding Development for<BR>Villages around Africa
+		    </div>
+		    <p/>
+		    <div class="border" style="cursor:pointer;padding-bottom:5px">
+		    	Subscribe and support a new project each month!<BR><input type='text' value='$10' style='display:inline;text-align:center; height:4vw; width:10vw;font-size:3vw'/>
+		    </div>
+		    <p/>
+		    <div class="border" onclick="scrollToAnchor('projectAnchor');" style="background-image:url('images/down_arrow.png');background-repeat:no-repeat;background-position:bottom center;background-size:60px;padding-bottom:35px;cursor:pointer;">
+		    	See Our Projects
+		    </div>
+	  	</div>
+	  	 -->
+	  	 <!--  <span style='width:100%;top:200px;vertical-align:center;box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);text-align:center;border-radius:15px; border:2px solid white;padding:10px;background-color:#000000;left:20vw;top:40vh;color:white;font-size:3vw;opacity:.8;'>
+		Fund a new project each month!<BR>
+		<i style='font-size:3.25vw;'><b>$</b></i> <input type='text' value='25' style='font-weight:bold;border-radius-top-left:15px;border-bottom-left-radius:15px;margin-right:0px;width:7vw;text-align:center;font-size:3vw;'/> 
+		<input type='button' value='Subscribe' style='font-weight:bold;border-style:none;margin-left:0px;color:white;font-size:3vw;background-color:#8ABC5C;border-top-right-radius:15px;border-bottom-right-radius:15px;' />
+		
+		</span>-->
+	  	<!-- <div style='position:absolute;right:5vw;top:15vh;height:80vh;width:40vh;background-color: #111;opacity:.8;border-radius:15px;border:2px #fff solid;'></div>
+	  	<img src='images/malawi_map_villages.png' style='position:absolute;right:5vw;top:15vh;height:80vh;' />
+	</div>-->
+<div style="position:relative;text-align:center;vertical-align:center;background-image:url('images/bg-water-pump.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;min-height:100%;width:100%;">
+	<div style='position:absolute;width:625px;height:140px;box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);text-align:center;border-radius:15px; border:2px solid white;padding:10px;background-color:#000000;left:20vw;top:40vh;opacity:.8;'></div>
+	<span style='position:absolute;color:white;font-size:3vw;left:22vw;top:42vh;line-height:1.35;'>
+	Fund a new project each month!<br/>
+	<input type='text' value='$ 25' style='background-color:white;padding:3px;margin-right:0px;color:black;font-weight:bold;border-radius-top-left:15px;border-bottom-left-radius:15px;margin-right:0px;width:7vw;text-align:center;font-size:3vw;'/><input type='button' value='Subscribe' style='font-weight:bold;border-style:none;margin-left:0px;color:white;font-size:3vw;background-color:#8ABC5C;border-top-right-radius:15px;border-bottom-right-radius:15px;' />
+	
+	</span>
+	
+</div>
+
+	<!-- Three highlighted projects --> 
+	<div style='background-color:#EFEFEF;vertical-align:center;text-align:center;'>
+		<div class='highlightedProject shadow bottom-rounded' style="background-image:url('uploads/thumb_205_default_buy_list.jpeg');">
+			<div class='highlightedProjectInfo shadow  bottom-rounded'>
+				<H5 style='text-shadow: 2px 2px #88CCCCCC;'>Start a Goat Herd</H5>
+				<I>Manyumba, Malawi</I>
+				<P style='margin:10px;font-size:16px;'>
+				Manyumba Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. 
+				</P>
+				
+				<div id='progressbarhighlight1' class='progressBar' style='position:absolute;bottom:37px;height:35px;left:0px;width:100%;margin-left:2px;margin-right:2px;'>
+				<div class='progressBar-label' style='font-size:24px;'>5% of $2000</div></div>
+				<div style='position:absolute;bottom:0px;left:0px;margin-left:2px;margin-bottom:2px;height:35px;width:65%;'><span style='position:absolute;left:10px;font-size:22px;vertical-align:center;color:black;font-weight:bold;'>$ </span>
+				<input id='donateInputhighlight1' type='text' value='5.00' style='position:absolute;left:30px;display:inline;text-decoration:underline;font-size:22px;vertical-align:center;color:black;font-weight:bold;height:100%;'/>
+				<button id='donateButtonhighlight1' class='waves-effect waves-light' style='position:absolute;right:0px;margin:0px;width:40%;font-size:14px;color:black;font-weight:bold;height:100%;'>Donate!</button></div>
+				<button id='viewDetailsButtonhighlight1' class='waves-effect waves-light' style='position:absolute;bottom:0px;right:0px;margin-right:2px;margin-bottom:2px;height:35px;width:35%;text-align:center;font-size:14px;color:black;font-weight:bold;border-left: solid 1px;background-color:#59ACA1'>Details</button>	
+			</div>
+		</div>
+		<div class='highlightedProject shadow bottom-rounded' style="background-image:url('uploads/thumb_2034_default_buy_list.jpeg');">
+			<div class='highlightedProjectInfo shadow bottom-rounded'>
+				<H5 style='text-shadow: 2px 2px #88CCCCCC;'>Start a Goat Herd</H5>
+				<I>Mlenga, Malawi</I>
+				<P style='margin:10px;font-size:16px;'>
+				Mlenga Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. 
+				</P>
+				
+				<div id='progressbarhighlight2' class='progressBar' style='position:absolute;bottom:37px;height:35px;left:0px;width:100%;margin-left:2px;margin-right:2px;'>
+				<div class='progressBar-label' style='font-size:24px;'>60% of $2000</div></div>
+				<div style='position:absolute;bottom:0px;left:0px;margin-left:2px;margin-bottom:2px;height:35px;width:65%;'><span style='position:absolute;left:10px;font-size:22px;vertical-align:center;color:black;font-weight:bold;'>$ </span>
+				<input id='donateInputhighlight2' type='text' value='5.00' style='position:absolute;left:30px;display:inline;text-decoration:underline;font-size:22px;vertical-align:center;color:black;font-weight:bold;height:100%;'/>
+				<button id='donateButtonhighlight2' class='waves-effect waves-light' style='position:absolute;right:0px;margin:0px;width:40%;font-size:14px;color:black;font-weight:bold;height:100%;'>Donate!</button></div>
+				<button id='viewDetailsButtonhighlight2' class='waves-effect waves-light' style='position:absolute;bottom:0px;right:0px;margin-right:2px;margin-bottom:2px;height:35px;width:35%;text-align:center;font-size:14px;color:black;font-weight:bold;border-left: solid 1px;background-color:#59ACA1'>Details</button>	
+			</div>
+		</div>
+		<div class='highlightedProject shadow bottom-rounded' style="background-image:url('uploads/thumb_1916_default_buy_list.png');">
+			<div class='highlightedProjectInfo shadow bottom-rounded'>
+				<H5 style='text-shadow: 2px 2px #88CCCCCC;'>Start a Goat Herd</H5>
+				<I>Kazembe, Malawi</I>
+				<P style='margin:10px;font-size:16px;'>
+				Kazembe Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. </P>
+				
+				<div id='progressbarhighlight3' class='progressBar' style='position:absolute;bottom:37px;height:35px;left:0px;width:100%;margin-left:2px;margin-right:2px;'>
+				<div class='progressBar-label' style='font-size:24px;'>60% of $2000</div></div>
+				<div style='position:absolute;bottom:0px;left:0px;margin-left:2px;margin-bottom:2px;height:35px;width:65%;'><span style='position:absolute;left:10px;font-size:22px;vertical-align:center;color:black;font-weight:bold;'>$ </span>
+				<input id='donateInputhighlight3' type='text' value='5.00' style='position:absolute;left:30px;display:inline;text-decoration:underline;font-size:22px;vertical-align:center;color:black;font-weight:bold;height:100%;'/>
+				<button id='donateButtonhighlight3' class='waves-effect waves-light' style='position:absolute;right:0px;margin:0px;width:40%;font-size:14px;color:black;font-weight:bold;height:100%;'>Donate!</button></div>
+				<button id='viewDetailsButtonhighlight3' class='waves-effect waves-light' style='position:absolute;bottom:0px;right:0px;margin-right:2px;margin-bottom:2px;height:35px;width:35%;text-align:center;font-size:14px;color:black;font-weight:bold;border-left: solid 1px;background-color:#59ACA1'>Details</button>
+			</div>
+		</div>
+		
+		<div class='highlightedProject shadow bottom-rounded' style="background-image:url('uploads/thumb_1916_default_buy_list.png');">
+			<div class='highlightedProjectInfo shadow bottom-rounded'>
+				<H5 style='text-shadow: 2px 2px #88CCCCCC;'>Start a Goat Herd</H5>
+				<I>Kazembe, Malawi</I>
+				<P style='margin:10px;font-size:16px;'>
+				Kazembe Village wants a herd of goats to solve persistent problems caused by poverty. Most residents live on less than $1.25 per day. </P>
+				
+				<div id='progressbarhighlight3' class='progressBar' style='position:absolute;bottom:37px;height:35px;left:0px;width:100%;margin-left:2px;margin-right:2px;'>
+				<div class='progressBar-label' style='font-size:24px;'>60% of $2000</div></div>
+				<div style='position:absolute;bottom:0px;left:0px;margin-left:2px;margin-bottom:2px;height:35px;width:65%;'><span style='position:absolute;left:10px;font-size:22px;vertical-align:center;color:black;font-weight:bold;'>$ </span>
+				<input id='donateInputhighlight3' type='text' value='5.00' style='position:absolute;left:30px;display:inline;text-decoration:underline;font-size:22px;vertical-align:center;color:black;font-weight:bold;height:100%;'/>
+				<button id='donateButtonhighlight3' class='waves-effect waves-light' style='position:absolute;right:0px;margin:0px;width:40%;font-size:14px;color:black;font-weight:bold;height:100%;'>Donate!</button></div>
+				<button id='viewDetailsButtonhighlight3' class='waves-effect waves-light' style='position:absolute;bottom:0px;right:0px;margin-right:2px;margin-bottom:2px;height:35px;width:35%;text-align:center;font-size:14px;color:black;font-weight:bold;border-left: solid 1px;background-color:#59ACA1'>Details</button>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(".highlightedProject").on("click", function(e) {
+		$(this).animate({width: '100%'}, 500);	
+	});
+	
+	
+	function getProgressBar(id, funded, total) {
+	    $( "#progressbar" + id).progressbar({
+	      	value: Math.round(funded),
+	      	max: Math.round(total)
+	    });
+	}
+	
+	getProgressBar('highlight1', 100, 2000);
+	getProgressBar('highlight2', 1200, 2000);
+	getProgressBar('highlight3', 1200, 2000);
+	
+	$("#donateButtonhighlight1").on('click', function() {
+			launchStripeForm("Manyumba", "Start a Goat Herd", $("#donateInputhighlight1").val());
+	});
+	
+	$("#donateButtonhighlight2").on('click', function() {
+		launchStripeForm("Mlenga", "Start a Goat Herd", $("#donateInputhighlight2").val());
+	});
+	
+	$("#donateButtonhighlight3").on('click', function() {
+		launchStripeForm("Kazembe", "Start a Goat Herd", $("#donateInputhighlight3").val());
+	});
+	</script>
+	<a name='projectAnchor'></a>
+
+	<div id='mapScreenDiv'>
+		<!-- Translucent overlay for screen when cell is expanded -->
+		<div id='modalBlock'>
+		</div>
+	  	
+	  	<div id='mapContainer'>
+
+	  		<!-- Buttons on map (world and add project) -->
+	  		<div class="fixed-action-btn" id='buttonHolder' style='position:absolute;top:0px;right:5px;z-index:3;'>
+			    <a class="btn-floating btn-large yellow darken-1" id='countrySelectButton' onclick="zoomToCountryOverview();">
+			      <i class="large material-icons">public</i>
+			    </a>
+			    
+			    <a class="btn-floating btn-large blue" id='addProjectButton' onclick="if (map.getZoom() < 14) { addNewVillage(); } else { zoomToCountryBounds(selectedCountry); }" style='margin-left:10px;' >
+			    	<i class="large material-icons" id='addProjectButtonText'>add_location</i>
+			    </a>
+			</div>
+	 	    
+	 	    <!-- Pop-up picture lightbox -->
+	 	    <div id='pictureDiv' class='pictureScroller' style='z-index:1000;position:absolute;top:0px;left:0px;right:0px;display:none;'>
+	 	    </div>
+	 	    
+	 	    <!-- Project/country/village tiles at bottom of map -->
+		    <div id="projectScroller" class='hide-scrollbar'>
+		    </div>
+	   	</div>
+	   
+	</div>
+
+	<!-- Target for automatic scroll -->
+	<a name='mapAnchor'></a>
+
+	<script>
+	// Global variables.
+var selectedCell, expandoCell, selectedElem, oldBounds, selectedCountry, selectedVillage, isMouseDown, geocoder = 0, querying = 0, dotCoords = 0, adding = 0, retryCount = 1;
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiamRlcHJlZSIsImEiOiJNWVlaSFBBIn0.IxSUmobvVT64zDgEY9GllQ';
+
+document.body.addEventListener('mousedown', function() {
+	isMouseDown = true;
+}, true); 
+
+document.body.addEventListener('mouseup', function() {
+	isMouseDown = false;
+}, true); 
+
+var map = new mapboxgl.Map({
+    container: 'mapContainer',
+    style: 'mapbox://styles/jdepree/cj37ll51d00032smurmbauiq4',
+    center: [35.2749, -15.7],
+    zoom:9
+});
+
+map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+map.scrollZoom.disable();
+
+map.on('load', function() {
+	    map.on('click', 'villages', function (e) {
+	    	selectVillage(e.features[0]);
+	    });
+
+	    map.on('click', 'countries', function (e) {
+	    	zoomToCountryBounds([[e.features[0].properties.swLng, e.features[0].properties.swLat], 
+	    	[e.features[0].properties.neLng, e.features[0].properties.neLat]]);
+	    });
+
+	    map.on('click', 'projects', function (e) {
+    		if (selectedElem == e.features[0]) {
+		        return;
+	        }
+		  	if (selectedCell) {
+				hideCell(function() { expandCell(e.features[0]); });
+		  	} else {
+			  	expandCell(e.features[0]);
+		  	}
+	    });
+	    
+	    map.on("mousemove", "villages", function(e) { map.getCanvas().style.cursor = 'pointer'; });
+	    map.on("mousemove", "countries", function(e) { map.getCanvas().style.cursor = 'pointer'; });
+	    map.on("mousemove", "projects", function(e) { map.getCanvas().style.cursor = 'pointer'; });
+	    map.on("mouseleave", "villages", function() { map.getCanvas().style.cursor = 'default'; });
+	    map.on("mouseleave", "countries", function() { map.getCanvas().style.cursor = 'default'; });
+	    map.on("mouseleave", "projects", function() { map.getCanvas().style.cursor = 'default'; });
+
+	    getTilesForBounds();
+	    // Bounding box for Malawi.
+	    selectedCountry = [[35.14799880981445, -15.829999923706055],
+	    	[35.52799987792969,-15.473999977111816]];
+});
+
+$("#modalBlock").on('click', function(e) {
+    hideCell();
+});
+
+function zoomToCountryOverview() {
+	map.fitBounds([[-18.841090, -18.756709], [42.155002, 15.849172]], {padding: {top: 20, bottom:150, left: 20, right: 20}});
+	retryCount = 1;
+	map.once('moveend', getTilesForBounds);
+}
+
+function zoomToCountryBounds(bounds) {
+	selectedCountry = bounds;
+
+	map.fitBounds(bounds, {padding: {top: 20, bottom:150, left: 20, right: 20}});
+	retryCount = 1;
+	map.once('moveend', getTilesForBounds);
+}
+
+function getTilesForBounds() {
+	zoom = map.getZoom();
+	if (adding) {
+		return;
+	}
+	$( "#projectScroller").empty();
+	if (zoom >= 14) {
+		count = 0;
+		lastElem = 0;
+		
+		$("#addProjectButtonText").html("zoom_out");
+		
+		projects = map.queryRenderedFeatures({layers:['projects']});
+		
+		if (projects.length == 0) {
+			if (retryCount > 0) {
+				map.once('moveend', getTilesForBounds);
+				retryCount--;
+			}
+			return;
+		}
+
+		projects.sort(function(a, b) {
+			diffA = a.properties.project_funded - a.properties.project_budget;
+			diffB = b.properties.project_funded - b.properties.project_budget;
+			return diffA >= diffB ? (diffA == diffB ? 0 : 1) : -1;
+		});
+
+		$.each( projects, function(i, elem) {
+			if($("#projectDiv" + elem.properties.id).length == 0) {
+				$( "#projectScroller" ).append( "<div id='projectDiv" + elem.properties.id + "' class='projectCell' style=\"position:relative;background-image:url('https://4and.me/uploads/" 
+						+ elem.properties.picture_filename + "');\">" 
+						+ "<div id='progressbar" + elem.properties.id + "' class='progressBar' style='position:absolute;bottom:25px;left:0px;width:100%;'>"
+						+ "<div class='progressBar-label'>" + Math.floor(100 * elem.properties.project_funded / elem.properties.project_budget) 
+						+ "% of $" + elem.properties.project_budget + "</div></div>"
+						+ "<button id='donateButton" + elem.properties.id + "' class='waves-effect waves-light' style='position:absolute;bottom:0px;left:0px;height:25px;width:100%;text-align:center;font-size:14px;color:black;font-weight:bold;'>" + elem.properties.name + "</button>"
+						+ "<button id='viewDetailsButton" + elem.properties.id + "' class='waves-effect waves-light' style='position:absolute;bottom:0px;right:0px;height:25px;display:none;text-align:center;font-size:14px;color:black;font-weight:bold;border-left: solid 1px;background-color:#59ACA1'>View Project Details</button>"
+						+ "</div>");
+		    	getProgressBar(elem.properties.id, elem.properties.project_funded, elem.properties.project_budget);
+		    	
+		    	$("#projectDiv" + elem.properties.id).on("click", function(e) {
+		    		if (selectedElem == elem) {
+				        return;
+			        }
+		    		
+		    		e.preventDefault();
+				  	
+				  	if (selectedCell) {
+						hideCell(function() { expandCell(elem); });
+				  	} else {
+					  	expandCell(elem);
+				  	}
+		    	});
+				lastElem = elem;
+				count++;
+			}
+	    });
+		if (count == 1) {
+			expandCell(lastElem);
+		} else if (count == 0 && selectedVillage) {
+			drawVillage(selectedVillage, false);
+			expandVillage(selectedVillage);
+		}
+	} else if (zoom >= 5) {
+		$("#addProjectButtonText").html("add_location");
+		villages = map.queryRenderedFeatures({layers:['villages']});
+		if (villages.length == 0) {
+			if (retryCount > 0) {
+				map.once('moveend', getTilesForBounds);
+				retryCount--;
+			}
+			return;
+		}
+		villages.sort(function(a, b) {
+			return b.properties.fundingCount - a.properties.fundingCount;
+		});
+		$.each(villages, function(i, elem) {
+			if($("#villageDiv" + elem.properties.id).length == 0) {
+				drawVillage(elem, true);
+			}
+	    });
+	} else {
+		$("#addProjectButtonText").html("add_location");
+		countries = map.queryRenderedFeatures({layers:['countries']});
+		countries.sort(function(a, b) {
+			return a.properties.projectCount <= b.properties.projectCount ? (a.properties.projectCount == b.properties.projectCount ? 0 : 1) : -1;
+		});
+		if (countries.length == 0) {
+			if (retryCount > 0) {
+				map.once('moveend', getTilesForBounds);
+				retryCount--;
+			}
+			return;
+		}
+		$.each(countries, function(i, elem) {
+			if($("#countryDiv" + elem.properties.id).length == 0) {
+				$( "#projectScroller" ).append( "<div class='projectCell' id='countryDiv" + elem.properties.id + "' style=\"position:relative;background-image:url('https://4and.me/uploads/" 
+						+ elem.properties.picture_filename + "');\">" 
+						+ "<span style='position:absolute;bottom:25px;left:0px;border-width:1px;border-style:solid;border-color:white;width:100%;background-color:#8ABC5C;font-size:12px;font-weight:bold;'>"
+						+ (elem.properties.projectCount > 0 ?
+						+ elem.properties.projectCount + " project" 
+						+ (elem.properties.projectCount == 1 ? "" : "s") 
+						+ (elem.properties.projectCount < elem.properties.projectCount ? " across " : " in ") : "")
+						+ elem.properties.villageCount + (elem.properties.projectCount < elem.properties.villageCount ? " proposed" : "")
+						+ " village" + (elem.properties.villageCount == 1 ? "" : "s")
+						+ "</span>"
+						+ "<button style='position:absolute;bottom:0px;left:0px;right:0px;height:25px;width:100%;text-align:center;font-size:14px;color:black;font-weight:bold;'>" 
+						+ elem.properties.name + "</button>"
+						+ "</div>");
+		    	$("#countryDiv" + elem.properties.id).on("click", function() {
+		    		zoomToCountryBounds(new mapboxgl.LngLatBounds(
+		    				new mapboxgl.LngLat(elem.properties.swLng, elem.properties.swLat),
+          					new mapboxgl.LngLat(elem.properties.neLng, elem.properties.neLat)));
+		    	});
+			}
+			
+	    });
+	}
+}
+
+function hideCell(nextAction) {
+	if (expandoCell) {
+		expandoCell.remove();
+		expandoCell = null;
+	}
+    
+    $('#modalBlock').hide();
+	
+	if (nextAction) {
+		selectedCell.animate({ width: '30vh'}, 500, nextAction);
+	} else {
+		selectedCell.animate({ width: '30vh'}, 500);
+	}
+
+	if ($(window).width() < 720) {
+		selectedCell.css('backgroundImage', "url('https://4and.me/uploads/" + selectedElem.properties.picture_filename + "')");
+	}
+	
+	selectedCell.css("cursor", "pointer");
+	selectedCell = null;
+	$("#pictureDiv").animate({height: "0vh"}, 500);
+		
+	if (selectedElem) {
+	    donateButton = $("#donateButton" + selectedElem.properties.id);
+		viewDetailsButton = $("#viewDetailsButton" + selectedElem.properties.id);
+	    if (donateButton) {
+			donateButton.html(selectedElem.properties.name);
+			donateButton.off('click');
+		    donateButton.css("backgroundColor", '#8ABC5C');
+			donateButton.animate({width: "100%"}, 500);
+			viewDetailsButton.css("display", "none");
+	    }
+	    
+
+	}
+    
+    newVillageDiv = $("#villageDivNew");
+    if (newVillageDiv) {
+    	newVillageDiv.off('click');
+    	$("#expandedNewVillage").off("click");
+    }
+    		
+    if (selectedElem && selectedElem.properties.project_funded < selectedElem.properties.project_budget) {
+    	undrawDonationHandle();
+    }
+    selectedElem = null;
+}
+
+function drawVillage(elem, hasListener) {
+	completed = parseInt(elem.properties.completedCount);
+	funding = parseInt(elem.properties.fundingCount);
+	construction = parseInt(elem.properties.constructionCount);
+	total = completed + funding + construction;
+	if (total == 0) {
+		filled = 0;
+	} else {
+		filled = Math.floor((total - funding) * 100 / total);
+	}
+	unfilled = 100 - filled;
+	$( "#projectScroller" ).append( "<div id='villageDiv" + elem.properties.id + "' class='projectCell' style=\"position:relative;background-image:url('https://4and.me/uploads/" 
+			+ elem.properties.picture_filename + "');" + (total == 0 ? "background-size:calc(30vh + 30px);" : "") + "\">"
+			+ (total > 0 ? "<span style='position:absolute;bottom:25px;height:25px;left:0px;width:100%;background:linear-gradient(90deg, #8ABC5C " + filled + "%, #CCCCCC " + unfilled + "%);border: solid 1px white;font-size:12px;font-weight:bold;'>"
+				+ elem.properties.projectCount + "</span>" : "")
+			+ "<button style='position:absolute;bottom:0px;left:0px;right:0px;height:25px;width:100%;text-align:center;font-size:14px;color:black;font-weight:bold;'>" 
+			+ elem.properties.name + "</button>"
+			+ "</div>");
+	if (hasListener) {
+		$("#villageDiv" + elem.properties.id).on("click", function(e) {
+	 		selectVillage(elem);   	
+		});
+	}
+}
+
+function selectVillage(village) {
+	selectedVillage = village;
+	if (selectedVillage.properties.fundingCount === "0" && selectedVillage.properties.constructionCount === "0" 
+			&& selectedVillage.properties.completedCount === "0") {
+		expandVillage(selectedVillage);
+    	map.flyTo({ center: village.geometry.coordinates, zoom: 15});
+	} else {
+		sw = [parseFloat(selectedVillage.properties.boundsSwLng), parseFloat(selectedVillage.properties.boundsSwLat)];
+		ne = [parseFloat(selectedVillage.properties.boundsNeLng), parseFloat(selectedVillage.properties.boundsNeLat)];
+		if (Math.abs(ne[0] - sw[0]) < .001) {
+			ne[0] += .005;
+			sw[0] -= .005;
+		}
+		if (Math.abs(ne[1] - sw[1]) < .001) {
+			ne[1] += .005;
+			sw[1] -= .005;
+   		}
+    	map.fitBounds([sw, ne],  {padding: {top: 20, bottom:150, left: 20, right: 20}});
+        retryCount = 1;
+    	map.once('moveend', getTilesForBounds);
+	}
+}
+function expandVillage(elem) {
+	selectedCell = $("#villageDiv" + elem.properties.id);
+	selectedCell.css("left", "0px");
+	selectedCell.css("cursor", "default");
+
+	selectedCell.animate({ width: '100%'}, 500);
+	$("#projectScroller").animate({ scrollLeft: document.getElementById("villageDiv" + elem.properties.id).offsetLeft });
+
+	expandoCell = $("<div>", {"class": "expandoCell"});
+
+	beforeGraphId = 'beforeGraph' + elem.properties.id;
+  	expandoCell.append("<div style='margin:5px;text-align:left;font-weight:bold;font-size:22px;'>" + elem.properties.name + "</div>"
+  			+ "<P style='margin:5px;margin-top:10px;margin-bottom:50px;text-align:left;font-size:16px;'>" + elem.properties.village_summary + "</P>"
+  			+ "<img style='position:absolute;top:5px;right:5px;width:24px;height:24px;cursor:pointer;' src='images/close_button.png' onclick='hideCell();window.event.stopPropagation();' />");
+			
+	selectedCell.append(expandoCell);
+}
+
+function expandCell(elem) {
+	selectedElem = elem;
+
+    $('#modalBlock').show();
+	selectedCell = $("#projectDiv" + elem.properties.id);
+	selectedCell.css("left", "0px");
+	selectedCell.css("cursor", "default");
+
+	selectedCell.animate({ width: '100%'}, 500, drawDonationHandle);
+	$("#projectScroller").animate({ scrollLeft: document.getElementById("projectDiv" + elem.properties.id).offsetLeft });
+
+	if ($(window).width() < 720) {
+		selectedCell.css('backgroundImage', 'none');
+	}
+	
+	expandoCell = $("<div>", {"class": "expandoCell"});
+	
+	pictureDiv = $("#pictureDiv");
+  	pictureDiv.empty();
+  
+	var updatePictures = 0;
+  	
+  	if (elem.properties.updatePictures) {
+	  	updatePictures = elem.properties.updatePictures.split("~");
+	  	for (i = 0; i < updatePictures.length; i++) {
+		  	breakPoint = updatePictures[i].indexOf(':');
+		  	imageId = updatePictures[i].substring(0, breakPoint);
+		  	description = updatePictures[i].substring(breakPoint + 1);
+		  	pictureDiv.append("<a href='https://4and.me/uploads/thumb_" + imageId + "_default_see_800x600.jpeg' data-imagelightbox='d'><img style='height:25vh;' src='https://4and.me/uploads/thumb_" + imageId + "_default_see_800x600.jpeg' alt=\"" + description + "\" /></a>");
+			var instanceD = $( 'a[data-imagelightbox="d"]' ).imageLightbox(
+			{
+				onLoadStart: function() { captionOff(); activityIndicatorOn(); },
+				onLoadEnd:	 function() { captionOn(); activityIndicatorOff(); },
+				onEnd:		 function() { captionOff(); activityIndicatorOff(); }
+			});
+		}
+		if (updatePictures.length > 0) {
+	  		pictureDiv.css("display", "block");
+	  		pictureDiv.animate({height: "25vh"}, 500);
+  	  	}
+  	}
+
+	donateButton = $("#donateButton" + elem.properties.id);
+	viewDetailsButton = $("#viewDetailsButton" + elem.properties.id);
+	if (elem.properties.project_funded < elem.properties.project_budget) {
+  		donateButton.html("Donate $<span id='" + donateButton.attr('id') + "Value'>5</span> and Subscribe to Updates!");
+  		donateButton.on('click', function() {
+  			launchStripeForm(elem.properties.villageName, elem.properties.name, $("#donateButton" + elem.properties.id + "Value").text());
+		});
+	  	//gradient = "linear-gradient(90deg, #59ACA1 " + percent + "%, #CCCCCC " + remaining + "%)";
+	  	//$("#progressbar" + elem.properties.id).find(".ui-progressbar-value").attr('background', gradient);
+  	} else {
+	    donateButton.html("Fully funded!");
+	    donateButton.css("backgroundColor", '#f6fdef');
+  	}
+	donateButton.animate({width: "50%"}, 500);
+	donateButton.css("border-bottom-right-radius", "0px");
+	viewDetailsButton.css("display", "inline");
+	viewDetailsButton.animate({width: "50%"}, 500);
+  	expandoCell.append("<div style='margin:5px;text-align:left;font-weight:bold;font-size:22px;'>" + elem.properties.name + ' in ' + elem.properties.villageName + "</div>"
+  			+ "<P style='margin:5px;margin-top:10px;margin-bottom:50px;text-align:left;font-size:16px;'>" + elem.properties.project_summary + "</P>"
+  			+ "<img style='position:absolute;top:5px;right:5px;width:24px;height:24px;cursor:pointer;' src='images/close_button.png' onclick='hideCell();window.event.stopPropagation();' />");
+	
+  	selectedCell.append(expandoCell);
+}
+
+function drawDonationHandle() {
+	if (selectedElem.properties.project_funded < selectedElem.properties.project_budget) {
+	  	progressbar = $("#progressbar" + selectedElem.properties.id);
+		funded = parseInt(selectedElem.properties.project_funded);
+	  	total = parseInt(selectedElem.properties.project_budget);
+	  	start = progressbar.find('.ui-progressbar-value').width();
+	  	width = progressbar.width();
+	  	startPercent = start * 100 / width;
+	  	progressbar.css('cursor', 'col-resize');
+	  	additional = Math.ceil(5 * 100 / total);
+	  	progressbar.append("<div id='donationSelector" + selectedElem.properties.id + "' class='donationHandle' style=\"left:" + startPercent + "%;width:16px;background-repeat:no-repeat;background-position:right;background-size:contain;background-image:url('images/drag_right.png')\"></div>");
+	  	var donationClicked = false;
+	  	
+	  	progressbar.on('click', function(e) {
+	  		x = Math.max(start, e.pageX - $(this).offset().left);
+		  	adjustDonationSelector(x, funded, total);
+	  	});
+	  	progressbar.on('mousemove', function(e) {
+	  		if (isMouseDown) {
+	  			x = Math.max(start, e.pageX - $(this).offset().left);
+			  	adjustDonationSelector(x, funded, total);
+	  		}
+	  	});
+	  	
+	  	progressbar.on('touchmove', function(e) {
+	  		var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+  			x = Math.max(start, touch.pageX - $(this).offset().left);
+		  	adjustDonationSelector(x, funded, total);
+  			e.preventDefault();
+	  	});
+	}
+}
+
+function adjustDonationSelector(x, funded, total) {
+  	progressbar = $("#progressbar" + selectedElem.properties.id);
+  	start = progressbar.find('.ui-progressbar-value').width();
+  	width = progressbar.width();
+	amount = Math.max(5, Math.ceil((x - start) * (total - funded) / (width - start)));
+	$("#donationSelector" + selectedElem.properties.id).width((x - start) + "px");
+	$("#donateButton" + selectedElem.properties.id + "Value").text(amount);
+}
+
+function undrawDonationHandle() {
+	progressbar = $("#progressbar" + selectedElem.properties.id);
+	progressbar.off('click mousemove');
+	$("#donationSelector" + selectedElem.properties.id).remove();
+	progressbar.css('cursor', 'default');
+}
+
+function launchStripeForm(villageName, projectTitle, value, recurring) {
+  	handler.open({
+    	name: villageName + " Village",
+    	description: projectTitle,
+    	amount: value * 100
+  	});
+}
+  
+// Lightbox Begin
+var activityIndicatorOn = function()
+{
+	$( '<div id="imagelightbox-loading"><div></div></div>' ).appendTo( 'body' );
+},
+activityIndicatorOff = function()
+{
+	$( '#imagelightbox-loading' ).remove();
+},
+
+overlayOn = function()
+{
+	$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+},
+overlayOff = function()
+{
+	$( '#imagelightbox-overlay' ).remove();
+},
+
+closeButtonOn = function( instance )
+{
+	$( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+},
+closeButtonOff = function()
+{
+	$( '#imagelightbox-close' ).remove();
+},
+
+captionOn = function()
+{
+	var description = $( 'a[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"] img' ).attr( 'alt' );
+	if( description.length > 0 )
+		$( '<div id="imagelightbox-caption">' + description + '</div>' ).appendTo( 'body' );
+},
+captionOff = function()
+{
+	$( '#imagelightbox-caption' ).remove();
+},
+
+navigationOn = function( instance, selector )
+{
+	var images = $( selector );
+	if( images.length )
+	{
+		var nav = $( '<div id="imagelightbox-nav"></div>' );
+		for( var i = 0; i < images.length; i++ )
+			nav.append( '<button type="button"></button>' );
+
+		nav.appendTo( 'body' );
+		nav.on( 'click touchend', function(){ return false; });
+
+		var navItems = nav.find( 'button' );
+		navItems.on( 'click touchend', function()
+		{
+			var $this = $( this );
+			if( images.eq( $this.index() ).attr( 'href' ) != $( '#imagelightbox' ).attr( 'src' ) )
+				instance.switchImageLightbox( $this.index() );
+
+			navItems.removeClass( 'active' );
+			navItems.eq( $this.index() ).addClass( 'active' );
+
+			return false;
+		})
+		.on( 'touchend', function(){ return false; });
+	}
+},
+navigationUpdate = function( selector )
+{
+	var items = $( '#imagelightbox-nav button' );
+	items.removeClass( 'active' );
+	items.eq( $( selector ).filter( '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ).index( selector ) ).addClass( 'active' );
+},
+navigationOff = function()
+{
+	$( '#imagelightbox-nav' ).remove();
+},
+
+arrowsOn = function( instance, selector )
+{
+	var $arrows = $( '<button type="button" class="imagelightbox-arrow imagelightbox-arrow-left"></button><button type="button" class="imagelightbox-arrow imagelightbox-arrow-right"></button>' );
+
+	$arrows.appendTo( 'body' );
+
+	$arrows.on( 'click touchend', function( e )
+	{
+		e.preventDefault();
+
+		var $this	= $( this ),
+			$target	= $( selector + '[href="' + $( '#imagelightbox' ).attr( 'src' ) + '"]' ),
+			index	= $target.index( selector );
+
+		if( $this.hasClass( 'imagelightbox-arrow-left' ) )
+		{
+			index = index - 1;
+			if( !$( selector ).eq( index ).length )
+				index = $( selector ).length;
+		}
+		else
+		{
+			index = index + 1;
+			if( !$( selector ).eq( index ).length )
+				index = 0;
+		}
+
+		instance.switchImageLightbox( index );
+		return false;
+	});
+},
+arrowsOff = function()
+{
+	$( '.imagelightbox-arrow' ).remove();
+};
+// Lightbox End
+	
+// STRIPE START
+var handler = StripeCheckout.configure({
+  	key: 'pk_test_AXxdOsB0Xz9tOVdCVq8jpkAQ',
+  	locale: 'auto',
+  	token: function(token) {
+    // You can access the token ID with `token.id`.
+    // Get the token ID to your server-side code for use.
+  	}
+});
+
+window.addEventListener('popstate', function() {
+  	handler.close();
+});
+// STRIPE END
+
+function previewImage(preview, fileInput) {
+	file = fileInput.files[0];
+	var formData = new FormData();
+	formData.append('qqfile', file, file.name);
+	$("#addNewVillageLoader").show();
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'uploadPicture.php', true);
+	xhr.onload = function () {
+	  	if (xhr.status === 200) {
+			json = JSON.parse(xhr.responseText);
+			preview.src = json.newPath;
+			$('#villageImageId').val(json.pictureId);
+			$("#addNewVillageLoader").hide();
+	  	} else {
+	    	alert('An error occurred!');
+	  	}
+	};
+	xhr.send(formData);
+}
+
+function submitNewVillage() {
+	$("#villageSubmitButton").attr('disabled',true);
+	$("#villageSubmitProgress").show();
+	$.post({
+		url: "saveNewVillage.php",
+		data: $("#addNewVillageForm").serialize(),
+		success: function() {
+			$("#villageSubmitProgress").hide();
+			Materialize.toast('Thanks!  We have received your information and will be in touch soon!', 4000);
+			revertFromAdd();
+		}
+	});
+}
+
+function getLoader(id, style) {
+	return '<div class="preloader-wrapper active" style="display:none;z-index:5;' + style + '" id="' + id + '">'
+   			+ '<div class="spinner-layer spinner-blue-only">'
+      		+ '<div class="circle-clipper left">'
+		    + '<div class="circle"></div>'
+		    + '</div><div class="gap-patch">'
+		    +   '<div class="circle"></div>'
+		    + '</div><div class="circle-clipper right">'
+		    +  '<div class="circle"></div>'
+		    + '</div>'
+		    + '</div>'
+		  	+ '</div>';
+}
+	
+function addNewVillage() {
+	adding = 1;
+	$("#projectScroller").empty();
+
+	$( "#projectScroller" ).html("<div id='villageDivNew' class='projectCell' style=\"background-image:url('images/upload_placeholder.jpeg');background-size:auto 100%;position:relative;cursor:default;\">"
+		+ "<input id='villageFile' type='file' style='display:none;' onchange=\"previewImage(document.getElementById('villageImage'), this);\">"
+		+ getLoader('addNewVillageLoader', 'position:absolute;top:5px;left:5px;vertical-align:center;')
+		+ "</div>");
+
+	selectedCell = $("#villageDivNew");
+	selectedCell.animate({ width: '100%'}, 500, function() { selectedCell.append(expandoCell); });
+	selectedCell.on('click', function(e) {
+		villageFile.click();
+	});
+	selectedCell.css('cursor', 'pointer');
+	
+	expandoCell = $("<div>", {"id": "expandedNewVillage", "class": "expandoCell"});
+	expandoCell.css('cursor', 'default');
+	expandoCell.on('click', function(e) {
+		  if (event.stopPropagation) {
+		      event.stopPropagation();
+		  } else {
+		      event.cancelBubble = true;
+		  }
+	});
+	
+	
+	expandoCell.append("<div style='text-align:left;overflow-x:hidden;'><span style='font-weight:bold;font-size:16px;'>Add Your Village to the Map</span><br/><span style='font-size:12px;'>We want to grow our network and crowdfund projects across Africa.  If you have a relationship with a village, please add it to our map and we will contact you about project opportunities.  Search for your village using the box above - if you can't find it, search for a nearby town and drag the blue dot to your village."
+		+ "<img style='position:absolute;top:5px;right:5px;width:24px;height:24px;cursor:pointer;' src='images/close_button.png' onclick='revertFromAdd();window.event.stopPropagation();' />"
+		+ "<form id='addNewVillageForm'><input type='hidden' name='villageLat' id='villageLat' /><input type='hidden' name='villageLng' id='villageLng' />"
+		+ "<input type='hidden' name='villageImageId' id='villageImageId' value='0' />"
+		+ "<input type='hidden' name='villageCountry' id='villageCountry' /><input type='hidden' name='villageRegion' id='villageRegion' />"
+		+ "<div class='row' style='margin:0px;padding:0px;'><div class='input-field col s12'><input id='villageName' name='villageName' type='text' class='validate'><label id='villageNameLabel' for='villageName'>Village Name - Use the Search Box Above</label></div>"
+      	+ "</div><div class='row' style='margin:0px;padding:0px;'><div class='input-field col s6' style='margin:0px;padding:0px;'><input id='full_name' name='fullName' type='text' class='validate' style='margin-left:10px;'><label for='full_name'>Your Name</label></div>"
+      	+ "<div class='input-field col s6' style='margin:0px;padding:0px;'><input id='email'  name='email' type='text' class='validate'><label for='email'>Email</label></div>"
+      	+ "</div><div class='row' style='margin-left:10px;padding:0px;'><div class='input-field col s12' style='margin:0px;padding:0px;'><textarea id='villageConnection' name='villageConnection' type='text' class='materialize-textarea'></textarea><label for='villageConnection'>What is your connection to this village?</label></div>"
+      	+ "</div><div class='row' style='margin-top:0px;padding:0px;'>"
+      	+ "<div class='input-field col s6' style='margin-top:0px;padding-top:0px;'><div class='progress' id='villageSubmitProgress' style='display:none;'><div class='indeterminate'></div></div></div>"
+      	+ "<div class='input-field col s6' style='margin-top:0px;padding-top:0px;text-align:right;'>"
+      	+ "<button id='villageSubmitButton' class='btn waves-effect waves-light' type='submit' onclick='submitNewVillage(); return false;'>Submit for Review"
+        + "<i class='material-icons right'>send</i>"
+        + "</button></div></div>"
+      	+ "</form>"
+		+ "</div>");
+
+	$("#buttonHolder").hide(); 
+	  	map.addControl(geocoder = new MapboxGeocoder({
+	    accessToken: mapboxgl.accessToken,
+	    placeholder: "Where is your village?"
+	}), 'top-right');
+}
+	
+$(document).on("keypress", ":input:not(textarea):not([type=submit])", function(event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+    }
+});
+	
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top - $(window).height()},'slow');
+}
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+
+<BODY style='padding:0px;margin:0px;'>
+
+<div style='width:100%;text-align:center;font-size:4vmin;font-weight:bold;' >Composite Development Score Over Time</div>
+ <div id='area-example'></div>
+<div id='donut'></div>
+<div class="chart-container">
+</div>
+<script>
+//https://morrisjs.github.io/morris.js/lines.html
+//http://www.apilayer.net/api/live?access_key=e2411798298e78e2a0f55d15a01a099d&source=USD&currencies=MWK&format=1
+Morris.Area({
+	  element: 'area-example',
+	  data: [
+	    { y: '2014', b: 168 * 50/2530, c: 2100 * 20/2530, d: 23 * 100/2530, e: 38 * 100/2530, f: 14 * 100/2530, g: 290 * -80/2530},
+	    { y: '2015',  b: 140 * 50/2530, c: 1420 * 20/2530, d: 35 * 100/2530, e: 70 * 100/2530, f: 21 * 100/2530, g: 178 * -80/2530},
+	    { y: '2016', b: 172 * 50/2530, c: 1410 * 20/2530, d: 74 * 100/2530, e: 112 * 100/2530, f: 28 * 100/2530, g: 74 * -80/2530}
+	  ],
+	  xLabels: 'year',
+	  xkey: 'y',
+	  ykeys: ['b', 'c', 'd', 'e', 'f', 'g'],
+	  labels: ['Education', 'Agriculture', 'Livestock', 'Business', 'Lifestyle', 'Waterborne Illness']
+	});
+	
+Morris.Donut({
+	  element: 'donut',
+	  data: [
+	    {value: 942500, label: 'Materials'},
+	    {value: 362500, label: 'Skilled Labor'},
+	    {value: 72500, label: 'Money Transfer'},
+	    {value: 50000, label: 'Exchange Buffer'},
+	    {value: 21750, label: 'Project Staff Stipend'}
+	  ],
+	  formatter: function (x) { return x + " Malawian Kwacha ($" + Math.round(x / 725) + ")"; }
+	}).on('click', function(i, row){
+	  console.log(i, row);
+	});
+	
+</script>
+<P>
+<!--  <div style="position:relative;text-align:center;vertical-align:center;background-image:url('images/bg-water-pump.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;min-height:100%;width:100%;">
+	<div style='position:absolute;width:550px;height:115px;box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);text-align:center;border-radius:15px; border:2px solid white;padding:10px;background-color:#000000;left:20vw;top:40vh;opacity:.8;'></div>
+	<span style='position:absolute;color:white;font-size:3vw;left:22vw;top:42vh;line-height:1.25;'>
+	Fund a new project each month!<br/>
+	<i style='font-size:3.25vw;'><b>$</b></i> <input type='text' value='25' style='font-weight:bold;border-radius-top-left:15px;border-bottom-left-radius:15px;margin-right:0px;width:7vw;text-align:center;font-size:3vw;'/> 
+	<input type='button' value='Subscribe' style='font-weight:bold;border-style:none;margin-left:0px;color:white;font-size:3vw;background-color:#8ABC5C;border-top-right-radius:15px;border-bottom-right-radius:15px;' />
+	
+	</span>
+	
+</div>-->
+	
+</BODY>
+</HTML>
